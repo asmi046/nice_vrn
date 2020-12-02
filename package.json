@@ -1,0 +1,55 @@
+{
+  "name": "nicevrn",
+  "version": "1.0.1",
+  "description": "Nice",
+  "main": "index.php",
+  "scripts": {
+    "test": "editorconfig-checker",
+    "clear_r": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"rm  n-avtomatic.ru/public_html/wp-content/themes/auto/*.*\"",
+    "send_r": "scp -C *.php *.png *.css dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_ms": "scp -C *.css dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_head": "scp -C header.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_one": "scp -C page-cart.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_cat": "scp -C category.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_singl": "scp -C single.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_index": "scp -C index.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_func": "scp -C functions.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_futt": "scp -C footer.php dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "mk_part_carbon": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"mkdir -p n-avtomatic.ru/public_html/wp-content/themes/auto/inc\"",
+    "send_carbon": "scp -C -r inc dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "send_carbon_fild": "scp -C -r inc/custom-fields-options dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/inc/",
+    "mk_part_dir": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"mkdir -p n-avtomatic.ru/public_html/wp-content/themes/auto/template-parts\"",
+    "send_part": "scp -C -r template-parts dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "mk_part_img": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"mkdir -p n-avtomatic.ru/public_html/wp-content/themes/auto/img\"",
+    "send_img": "scp -r img dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "mk_part_js": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"mkdir -p n-avtomatic.ru/public_html/wp-content/themes/auto/js\"",
+    "send_js": "scp -r js dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "mk_part_css": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"mkdir -p n-avtomatic.ru/public_html/wp-content/themes/auto/css\"",
+    "send_css": "scp -C -r css dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "mk_part_fonts": "ssh dedenkyr_asmi@dedenkyr.beget.tech \"mkdir -p n-avtomatic.ru/public_html/wp-content/themes/auto/fonts\"",
+    "send_fonts": "scp -C -r fonts dedenkyr_asmi@dedenkyr.beget.tech:n-avtomatic.ru/public_html/wp-content/themes/auto/",
+    "group_media": "group-css-media-queries css/main.css css/g_main.css",
+    "send_all": "npm run send_r & npm run send_css & npm run send_part & npm run send_img & npm run send_image & npm run send_js & npm run send_fonts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asmi046/nice_vrn.git"
+  },
+  "keywords": [
+    "wp",
+    "WordPress"
+  ],
+  "author": "Asmi-Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asmi046/nice_vrn/issues"
+  },
+  "homepage": "https://github.com/asmi046/nice_vrn#readme",
+  "dependencies": {
+    "editorconfig-checker": "^3.1.0",
+    "group-css-media-queries": "^1.4.1",
+    "postcss-cli": "^7.1.2",
+    "postcss-csso": "^4.0.0",
+    "postcss-import": "^12.0.1"
+  }
+}
