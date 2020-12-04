@@ -1776,7 +1776,8 @@ a {
 .container {
   position: relative;
   z-index: 4;
-  width: 1280px;
+  max-width: 1280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto
 }
