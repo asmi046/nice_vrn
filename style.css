@@ -3527,7 +3527,6 @@ article, .entry-header {
 }
 .about-product__img {
   height: 524px;
-  /*padding-top: 170px;*/
   margin-bottom: 47px;
   border: 0.5px solid #fff;
 }
@@ -4336,6 +4335,8 @@ article, .entry-header {
 
 @media screen and (max-width:414px) {
   .about-product__img {
+    background: url(img/about-product-bg-mb.jpg)!important;
+    background-size: cover!important;
     height: 200px;
   }
   .about-product__img h1 {
