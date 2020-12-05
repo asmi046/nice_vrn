@@ -27,7 +27,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Elements
 # Forms
 # Navigation
-	## Links
+	## Links 
 	## Menus
 # Accessibility
 # Alignments
@@ -3624,6 +3624,7 @@ article, .entry-header {
 }
 .advantages__column {
   justify-content: space-between;
+  align-items: center;
 }
 .advantages__item {
   max-width: 274px;
@@ -3651,6 +3652,7 @@ article, .entry-header {
 .welding-icon:before{
   width: 105px;
   height: 105px;
+  margin-bottom: 30px;
   background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDQuMzMzIiBoZWlnaHQ9IjEwNC4zMzMiIHZpZXdCb3g9IjAgMCAxMDQuMzMzIDEwNC4zMzMiPg0KICA8ZyBpZD0iSWNvbnNfY29weSIgZGF0YS1uYW1lPSJJY29ucyBjb3B5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTYgLTE2KSI+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF82OCIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNjgiIGQ9Ik0xMTUuMTE3LDQxNi42OTRIOTUuOTg5di0zLjQ3OEE1LjIyMyw1LjIyMywwLDAsMCw5MC43NzIsNDA4SDQ1LjU2MWE1LjIyMyw1LjIyMywwLDAsMC01LjIxNyw1LjIxN3YzLjQ3OEgyMS4yMTdhNS4yMTcsNS4yMTcsMCwwLDAsMCwxMC40MzNoOTMuOWE1LjIxNyw1LjIxNywwLDEsMCwwLTEwLjQzM1ptLTcxLjI5NC0zLjQ3OGExLjc0MSwxLjc0MSwwLDAsMSwxLjczOS0xLjczOUg5MC43NzJhMS43NDEsMS43NDEsMCwwLDEsMS43MzksMS43Mzl2My40NzhINDMuODIyWm03MS4yOTQsMTAuNDMzaC05My45YTEuNzM5LDEuNzM5LDAsMCwxLDAtMy40NzhoOTMuOWExLjczOSwxLjczOSwwLDAsMSwwLDMuNDc4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMzA2Ljc5NCkiIGZpbGw9IiMwMDU0OWYiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzY5IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA2OSIgZD0iTTAsMEgxMC40MzNWMy40NzhIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQ5LjIyNSA0NC40MzgpIHJvdGF0ZSgtNDUpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83MCIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzAiIGQ9Ik0wLDBINi45NTZWMy40NzhIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU1LjM3MSA0OC4xMjcpIHJvdGF0ZSgtNDUpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83MSIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzEiIGQ9Ik0xMTkuNjQ0LDU3LjczM2gzLjQ3OFYyMi45NTZhMS43MzksMS43MzksMCwwLDAtLjUwOS0xLjIzTDExNy40LDE2LjUwOWExLjczOSwxLjczOSwwLDAsMC0xLjIzLS41MDlINzAuOTU2YTEuNzM5LDEuNzM5LDAsMCwwLTEuMjMuNTA5bC01LjIxNyw1LjIxN0ExLjczOSwxLjczOSwwLDAsMCw2NCwyMi45NTZWODIuMDc4YTEuNzM5LDEuNzM5LDAsMCwwLC41MDksMS4yM2w1LjIxNyw1LjIxN2ExLjczOSwxLjczOSwwLDAsMCwxLjIzLjUwOUg5Ny4wMzlWODUuNTU2SDcxLjY3NmwtNC4yLTQuMlYyMy42NzZsNC4yLTQuMmg0My43NzFsNC4yLDQuMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zNy41NjcpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83MiIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzIiIGQ9Ik05Niw0OGgzLjQ3OHYzLjQ3OEg5NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC02Mi42MTEgLTI1LjA0NCkiIGZpbGw9IiMwMDU0OWYiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzczIiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA3MyIgZD0iTTI4OCw0OGgzLjQ3OHYzLjQ3OEgyODhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjEyLjg3OCAtMjUuMDQ0KSIgZmlsbD0iIzAwNTQ5ZiIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfNzQiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDc0IiBkPSJNOTYsMzA0aDMuNDc4djMuNDc4SDk2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTYyLjYxMSAtMjI1LjQpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83NSIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzUiIGQ9Ik0yODYuODg1LDI4MEgyNjIuNTRhMS43MzksMS43MzksMCwwLDAtMS4yMy41MDlsLTIuOTY4LDIuOTY4aC02LjIzNWExLjczOSwxLjczOSwwLDAsMC0xLjczOSwxLjczOWgtOC42OTRhMS43MzksMS43MzksMCwwLDAtMS4yMy41MDlsLTcuODI1LDcuODI1YTUuNDI4LDUuNDI4LDAsMSwwLDcuNjc2LDcuNjc2bDUuNTc3LTUuNTc3aDQuNWExLjczOSwxLjczOSwwLDAsMCwxLjczOSwxLjczOWgzNC43NzhhMS43MzksMS43MzksMCwwLDAsMS43MzktMS43MzlWMjgxLjczOUExLjczOSwxLjczOSwwLDAsMCwyODYuODg0LDI4MFptLTQxLjczMywxMi4xNzJhMS43MzksMS43MzksMCwwLDAtMS4yMy41MDlsLTYuMDg2LDYuMDg2YTEuOTUsMS45NSwwLDAsMS0yLjc1Ny0yLjc1N2w3LjMxNi03LjMxNmg3Ljk3NHYzLjQ3OFptMTIuMTcyLDEuNzM5aC0zLjQ3OHYtNi45NTZoMy40NzhabTE3LjM4OSwwaC02Ljk1NnYtMS43MzlhMS43NDEsMS43NDEsMCwwLDEsMS43MzktMS43MzloMy40NzhhMS43NDEsMS43NDEsMCwwLDEsMS43MzksMS43MzlabTEwLjQzMywwSDI3OC4xOXYtMS43MzlhNS4yMjMsNS4yMjMsMCwwLDAtNS4yMTctNS4yMTdIMjY5LjVhNS4yMjMsNS4yMjMsMCwwLDAtNS4yMTcsNS4yMTd2MS43MzlIMjYwLjh2LTcuOTc0bDIuNDU5LTIuNDU5aDIxLjg4NVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xNjguMjkgLTIwNi42MTcpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83NiIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzYiIGQ9Ik0xMzguNzc4LDEzMy4yMTFWMTE5LjNoNS4yMTd2LTMuNDc4aC01LjIxN3YtMy40NzhoNS4yMTdhMS43MzksMS43MzksMCwwLDAsMS43MzktMS43MzlWODkuNzM5QTEuNzM5LDEuNzM5LDAsMCwwLDE0My45OTQsODhIMTA1LjczOUExLjczOSwxLjczOSwwLDAsMCwxMDQsODkuNzM5djIwLjg2N2ExLjczOSwxLjczOSwwLDAsMCwxLjczOSwxLjczOUgxMzUuM3YzLjQ3OEgxMDUuNzM5VjExOS4zSDEzNS4zdjEzLjkxMVptLTMxLjMtMjQuMzQ0VjkxLjQ3OGgzNC43Nzh2MTcuMzg5aC0zLjQ3OHYtMy40NzhIMTM1LjN2My40NzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjguODcyIC01Ni4zNSkiIGZpbGw9IiMwMDU0OWYiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzc3IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA3NyIgZD0iTTAsMEgzLjQ3OFY3LjJIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU4LjU4IDY2Ljg3Mykgcm90YXRlKC0xNS4wMDkpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83OCIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzgiIGQ9Ik0wLDBIMy40NzhWMTIuNjkxSDBaIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjg2NiwgLTAuNSwgMC41LCAwLjg2NiwgNDkuMjcxLCA2Ni43MzgpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF83OSIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgNzkiIGQ9Ik0wLDBIMy40NzhWMTkuNjczSDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzNy4zNjcgNjcuNjU1KSByb3RhdGUoLTQ1KSIgZmlsbD0iIzAwNTQ5ZiIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfODAiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDgwIiBkPSJNMCwwSDMuNDc4VjQuMDE2SDBaIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjUsIC0wLjg2NiwgMC44NjYsIDAuNSwgMzkuNDczLCA4MS40MzUpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF84MSIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgODEiIGQ9Ik0xMTIsMzc2aDE5LjEyOHYzLjQ3OEgxMTJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNzUuMTMzIC0yODEuNzUpIiBmaWxsPSIjMDA1NDlmIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF84MiIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgODIiIGQ9Ik0zMTIsMzc2aDE3LjM4OXYzLjQ3OEgzMTJaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjMxLjY2MSAtMjgxLjc1KSIgZmlsbD0iIzAwNTQ5ZiIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfODMiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDgzIiBkPSJNMCwwSDEwLjA2M1YzLjQ3OEgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTMuMDA2IDY4LjY3OSkgcm90YXRlKC00NSkiIGZpbGw9IiMwMDU0OWYiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzg0IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA4NCIgZD0iTTAsMEgxNy44MjFWMy40NzhIMFoiIHRyYW5zZm9ybT0ibWF0cml4KDAuNSwgLTAuODY2LCAwLjg2NiwgMC41LCA3OC44MzEsIDc0LjAzNikiIGZpbGw9IiMwMDU0OWYiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzg1IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCA4NSIgZD0iTTAsMEg3LjJWMy40NzhIMFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDcyLjU2MSA3Mi45NDEpIHJvdGF0ZSgtNzQuOTkxKSIgZmlsbD0iIzAwNTQ5ZiIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfODYiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDg2IiBkPSJNNDA4LDM3NmgzLjQ3OHYzLjQ3OEg0MDhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMzA2Ljc5NCAtMjgxLjc1KSIgZmlsbD0iIzAwNTQ5ZiIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfODciIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDg3IiBkPSJNODAsMzc2aDMuNDc4djMuNDc4SDgwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUwLjA4OSAtMjgxLjc1KSIgZmlsbD0iIzAwNTQ5ZiIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
 }
 .contract-icon:before{
@@ -3803,6 +3805,15 @@ article, .entry-header {
 }
 
 @media screen and (max-width:1150px) {
+  .advantages__column {
+    align-items: flex-start;
+  }
+  .advantages__item {
+    margin-right: 10px;
+  }
+    .advantages__item:last-child {
+    margin-right: 0;
+  }
   .catalog-wrapper {
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
@@ -4048,6 +4059,26 @@ article, .entry-header {
 @media screen and (max-width:768px) {
   .main-slider__item {
     padding-top: 40px
+  }
+  .making-calc__column form {
+    max-width: 100%;
+  }
+  .advantages {
+    padding: 50px 0 50px 0;
+  }
+  .advantages__column {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .advantages__item {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .advantages__item:nth-child(3) {
+    margin-bottom: 0;
+  }
+    .advantages__item:nth-child(4) {
+    margin-bottom: 0;
   }
 }
 
@@ -4304,34 +4335,36 @@ article, .entry-header {
 }
 
 @media screen and (max-width:414px) {
-  .advantages__column {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   .about-product__img {
     height: 200px;
   }
   .about-product__img h1 {
-    font-size: 43px;
-    line-height: 48px;
-    margin: 0 0 0 10px;
-  }
+    font-size: 35px;
+    line-height: 35px;
+    margin: 40px 0 0 10px;
+ }
   .about-product__img h1 br {
     display: none;
   }
-  .advantages__item {
-    max-width: 274px;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .advantages {
-    padding: 52px 0 30px 0;
+  .advantages__item:nth-child(3) {
+    margin-bottom: 40px;
   }
     .stages {
     padding: 52px 0 50px 0;
   }
   .stages__img {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width:360px) {
+  .making-calc h2, 
+  .about-making h2, 
+  .advantages h2, 
+  .stages h2, 
+  .work h2 {
+    font-size: 28px;
+    line-height: 33px;
   }
 }
 
@@ -4356,3 +4389,5 @@ article, .entry-header {
     min-width: 0px;
   }
 }
+
+

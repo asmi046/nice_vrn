@@ -15,7 +15,7 @@ get_header();
 			?>
 		</div>
 
-		<section class="about-product">
+		<section class="about-product"> 
 			<div class="container">
 				<div class="about-product__img" style="background: url(<?php bloginfo('template_url');?>/img/about-product-bg.jpg); background-position: top center; background-size: cover;">
 					<h1>
