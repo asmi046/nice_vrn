@@ -13,7 +13,7 @@ get_header();
 				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );   
 			}
 			?>
-		</div>
+		</div> 
 
 		<section class="about-product"> 
 			<div class="container">
@@ -32,10 +32,10 @@ get_header();
 					</h2>
 					<div class="making-calc__column d-flex">
 						<form action="#">
-							<input type="text" placeholder="Высота (мм)" autocomplete="off" name="form[]" data-value="" class="making-calc__input">
-							<input type="text" placeholder="Ширина (мм)" autocomplete="off" name="form[]" data-value="" class="making-calc__input">
+							<input type="text" id="width" placeholder="Ширина (мм)" value="" class="making-calc__input">
+							<input type="text" id="height" placeholder="Высота (мм)" value="" class="making-calc__input">
 							<div class="making-calc__disp">
-								<h3>Цена: <span>57 000 руб.</span></h3>
+								<h3>Цена: <span id="stoimost">57 000 руб.</span></h3>
 								<button type="submit" class="button making-calc__btn">Заказать ворота</button>
 								<p>
 									* Расчетная цена не явлеяется публичной офертой и при <br>

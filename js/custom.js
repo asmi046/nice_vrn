@@ -17,23 +17,23 @@ jQuery(document).ready(function ($) {
     fade: true,
     cssEase: 'linear'
   });
-   $('.slider-for').slick({
+  $('.slider-for').slick({
    slidesToShow: 1,
    slidesToScroll: 1,
    arrows: false,
    asNavFor: '.slider-nav'
  });
-   var vertical = true;
-   if($(window).width() < 500) {
+  var vertical = true;
+  if($(window).width() < 500) {
     vertical = false;
-   }
- $('.slider-nav').slick({
+  }
+  $('.slider-nav').slick({
    slidesToShow: 3,
    slidesToScroll: 1,
    asNavFor: '.slider-for',
    arrows: false,
-    verticalSwiping: true,
-    vertical: vertical,
+   verticalSwiping: true,
+   vertical: vertical,
    focusOnSelect: true
  });
   $(".tab_item").not(":first").hide();
@@ -70,7 +70,7 @@ jQuery(document).ready(function ($) {
     fixedContentPos: false
   });
   $(".header").scrollToFixed({
-      marginTop: -1
+    marginTop: -1
   });
 
 
@@ -97,11 +97,32 @@ jQuery(document).ready(function ($) {
   jQuery("input[type=tel]").inputmask(inputmask_96e76a5f);
 
   var $page = $('html, body');
-    $('.menu a[href*="#"]').click(function() {
-        $page.animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - 100
-        }, 400);
-        return false;
-    });
-  
+  $('.menu a[href*="#"]').click(function() {
+    $page.animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - 100
+    }, 400);
+    return false;
+  });
+
+// //Калькулятор
+$('.making-calc__input').on('keyup', function(){
+  height  = document.getElementById('height').value;
+  width  = document.getElementById('width').value;
+  if(width == ""){
+// alert("Вы не указали Ширину ворот");
+} else if(height == ""){
+// alert("Вы не указали Высоту ворот");
+} else {
+  cena = 0.005;
+  ploschad = parseFloat (height)* parseFloat (width);
+// document.getElementById('ploschad').innerHTML = "Площадь равна: "+ ploschad +" кв. м.";
+stoimost = ploschad*cena;
+document.getElementById('stoimost').innerHTML = ""+ stoimost +" руб.";
+}
 });
+
+});
+
+
+
+
