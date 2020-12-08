@@ -36,7 +36,7 @@ get_header();
 							<input type="text" id="height" placeholder="Высота (мм)" value="" class="making-calc__input">
 							<div class="making-calc__disp">
 								<h3>Цена: <span id="stoimost">57 000 руб.</span></h3>
-								<button type="submit" class="button making-calc__btn">Заказать ворота</button>
+								<button type="submit" class="button work-modal making-calc__btn">Заказать ворота</button>
 								<p>
 									* Расчетная цена не явлеяется публичной офертой и при <br>
 									расчете на месте может отличаться
