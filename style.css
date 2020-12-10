@@ -25,7 +25,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 # Typography
 # Elements
-# Forms
+# Forms 
 # Navigation
 	## Links 
 	## Menus
@@ -1898,7 +1898,8 @@ a {
   padding-bottom: 4px
 }
 
-.menu-item-203 {
+.menu-item-203, 
+.menu-item-2100 {
   font-weight: bold;
 }
 
