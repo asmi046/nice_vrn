@@ -74,6 +74,14 @@ get_header();
 						Откатные ворота это Практично, Удобно, Стильно.
 					</p>
 				</div>
+
+				<div class="production-img">
+
+					<img src="<?php echo get_template_directory_uri();?>/img/production-img-1.jpg" alt="">
+					<img src="<?php echo get_template_directory_uri();?>/img/production-img-2.jpg" alt="">
+
+				</div>
+
 			</div>
 		</section>
 

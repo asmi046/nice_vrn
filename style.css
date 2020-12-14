@@ -3614,6 +3614,7 @@ article, .entry-header {
 .about-making {
   max-width: 1240px;
   width: 100%;
+  margin-bottom: 30px;
 }
 .about-making h2 {
   margin: 0px 0px 46px 0px;
@@ -3744,6 +3745,23 @@ article, .entry-header {
   font-weight: bold;
   line-height: 37px;
 }
+
+.production-img {}
+.production-img__row {}
+.production-img__item {
+  width: 30%;
+  height: 413px;
+}
+.production-img__item_two {
+  width: 70%;
+  height: 413px;
+}
+.production-img__item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 
 @media screen and (max-width:1500px) {
