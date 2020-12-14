@@ -1789,7 +1789,20 @@ a {
 }
 
 .header {
-  padding-top: 22px
+  padding-top: 22px 
+}
+
+.scroll-to-fixed-fixed .logo,
+.scroll-to-fixed-fixed .header-contacts
+ {
+  display: none;
+}
+
+.scroll-to-fixed-fixed .header-content {
+    margin: 0 auto;
+}
+.scroll-to-fixed-fixed nav {
+    margin-top: 0;
 }
 
 .header-page {
@@ -3845,6 +3858,10 @@ article, .entry-header {
 }
 
 @media screen and (max-width:1100px) {
+  .scroll-to-fixed-fixed .logo,
+  .scroll-to-fixed-fixed .header-contacts {
+    display: flex;
+  }
     .logo {
      margin-left: 0 !important; 
      margin-bottom: 0 !important; 
