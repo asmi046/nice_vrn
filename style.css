@@ -3733,6 +3733,14 @@ article, .entry-header {
 }
 
 
+@media screen and (max-width:1500px) {
+    .header-contacts {
+    justify-content: flex-end;
+    }
+    .header-cart {
+    margin-left: 150px;
+    }
+  }
 
 @media screen and (max-width:1300px) {
   .container {
@@ -3750,11 +3758,8 @@ article, .entry-header {
   .new-products .container:before {
     right: 0
   }
-  .header-contacts {
-    justify-content: flex-end;
-  }
   .header-cart {
-    margin-left: 20px;
+    margin-left: 80px;
   }
 }
 
@@ -3838,6 +3843,19 @@ article, .entry-header {
     width: 500px
   }
 }
+
+@media screen and (max-width:1100px) {
+    .logo {
+     margin-left: 0 !important; 
+     margin-bottom: 0 !important; 
+  }
+  .header-content {
+    margin-right: 20px !important; 
+  }
+  .hamburger {
+     margin-right: 0px !important; 
+  }
+  }
 
 @media screen and (max-width:1050px) {
   .footer1-menu {
@@ -3997,6 +4015,12 @@ article, .entry-header {
   	margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width:812px) {
+  .header-phone {
+    padding-left: 0 !important;
+  }
+  }
 
 @media screen and (max-width:800px) {
   .news-wrapper {
