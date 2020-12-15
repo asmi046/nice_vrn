@@ -13,7 +13,7 @@ get_header();
 				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );   
 			}
 			?>
-		</div> 
+		</div>  
 
 		<section class="about-product"> 
 			<div class="container">
@@ -77,8 +77,23 @@ get_header();
 
 				<div class="production-img">
 
-					<img src="<?php echo get_template_directory_uri();?>/img/production-img-1.jpg" alt="">
-					<img src="<?php echo get_template_directory_uri();?>/img/production-img-2.jpg" alt="">
+					<div class="production-img__row d-flex">
+						<div class="production-img__item">
+							<img src="<?php echo get_template_directory_uri();?>/img/production-img-1.jpg" alt="">
+						</div>
+						<div class="production-img__item">
+							<img src="<?php echo get_template_directory_uri();?>/img/production-img-2.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="production-img__row d-flex">
+						<div class="production-img__item">
+							<img src="<?php echo get_template_directory_uri();?>/img/production-img-4.jpg" alt="">
+						</div>
+						<div class="production-img__item">
+							<img src="<?php echo get_template_directory_uri();?>/img/production-img-3.jpg" alt="">
+						</div>
+					</div>
 
 				</div>
 

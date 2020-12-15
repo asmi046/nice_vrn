@@ -3746,6 +3746,21 @@ article, .entry-header {
   line-height: 37px;
 }
 
+.production-img {}
+.production-img__row {
+  margin-bottom: 5px;
+}
+.production-img__item {
+  margin-right: 10px;
+}
+.production-img__row:last-child {
+  margin-bottom: 0;
+}
+.production-img__item:last-child {
+  margin-right: 0;
+}
+
+
 @media screen and (max-width:1500px) {
     .header-contacts {
     justify-content: flex-end;
