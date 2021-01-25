@@ -3919,9 +3919,14 @@ article, .entry-header {
 .smart-equip {
   padding: 20px 0 69px 0;
 }
+.smart-equip__col {
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
 
-
-
+.smart-equip .button-wrap {
+  padding: 0;
+}
 
 
 

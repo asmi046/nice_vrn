@@ -62,41 +62,41 @@
 
 				<div class="smart-advant__col d-flex">
 					
-						<p class="smart-advant__item icon-sm-01">
-							МАКСИМАЛЬНО ВОЗМОЖНЫЙ
-							УРОВЕНЬ ЗАЩИТЫ <br>
-							ДАННЫХ
-						</p>
+					<p class="smart-advant__item icon-sm-01">
+						МАКСИМАЛЬНО ВОЗМОЖНЫЙ
+						УРОВЕНЬ ЗАЩИТЫ <br>
+						ДАННЫХ
+					</p>
 
-						<p class="smart-advant__item icon-sm-02">
-							ЯЧЕИСТАЯ СЕТЬ СОЕДИНЕНИЯ
-							МЕЖДУ УСТРОЙСТВАМИ <br>
-							УМНОГО ДОМА
-						</p>
+					<p class="smart-advant__item icon-sm-02">
+						ЯЧЕИСТАЯ СЕТЬ СОЕДИНЕНИЯ
+						МЕЖДУ УСТРОЙСТВАМИ <br>
+						УМНОГО ДОМА
+					</p>
 
-						<p class="smart-advant__item icon-sm-03">
-							НЕОГРАНИЧЕННЫЕ ВОЗМОЖНОСТИ
-							РАЗВИТИЯ СИСТЕМЫ <br>
-							УМНОГО ДОМА
-						</p>
+					<p class="smart-advant__item icon-sm-03">
+						НЕОГРАНИЧЕННЫЕ ВОЗМОЖНОСТИ
+						РАЗВИТИЯ СИСТЕМЫ <br>
+						УМНОГО ДОМА
+					</p>
 
-						<p class="smart-advant__item icon-sm-04">
-							СИСТЕМА УМНОГО ДОМА 
-							РАБОТАЕТ БЕЗ ПОДКЛЮЧЕНИЯ <br>
-							К СЕТИ
-						</p>
+					<p class="smart-advant__item icon-sm-04">
+						СИСТЕМА УМНОГО ДОМА 
+						РАБОТАЕТ БЕЗ ПОДКЛЮЧЕНИЯ <br>
+						К СЕТИ
+					</p>
 
-						<p class="smart-advant__item icon-sm-05">
-							ПРОФЕССИОНАЛЬНАЯ УСТАНОВКА
-							ОТ СЕРТИФИЦИРОВАННЫХ <br>
-							СПЕЦИАЛОСТОВ
-						</p>
+					<p class="smart-advant__item icon-sm-05">
+						ПРОФЕССИОНАЛЬНАЯ УСТАНОВКА
+						ОТ СЕРТИФИЦИРОВАННЫХ <br>
+						СПЕЦИАЛОСТОВ
+					</p>
 
-						<p class="smart-advant__item icon-sm-06">
-							БОЛЕЕ 300 СОВМЕСТИМЫХ 
-							С FIBARO ПРОИЗВОДИТЕЛЕЙ <br>
-							УМНЫХ УСТРОЙСТВ
-						</p>
+					<p class="smart-advant__item icon-sm-06">
+						БОЛЕЕ 300 СОВМЕСТИМЫХ 
+						С FIBARO ПРОИЗВОДИТЕЛЕЙ <br>
+						УМНЫХ УСТРОЙСТВ
+					</p>
 
 				</div>
 
@@ -189,6 +189,40 @@
 			<div class="container">
 				<h2>Оборудование fibaro </h2>
 
+				<div class="smart-equip__col d-flex">
+
+					<?php 
+
+$categories = get_categories( [
+	'taxonomy'     => 'category',
+	'type'         => 'post',
+	'child_of'     => 0,
+	'parent'       => '',
+	'orderby'      => 'name',
+	'order'        => 'ASC',
+	'hide_empty'   => 1,
+	'hierarchical' => 1,
+	'exclude'      => '',
+	'include'      => '',
+	'number'       => 4,
+	'pad_counts'   => false,
+	// полный список параметров смотрите в описании функции http://wp-kama.ru/function/get_terms
+] );
+
+if( $categories ){
+	foreach( $categories as $cat ){
+						?>
+						<?php get_template_part('template-parts/product-loop-new');?>
+						<?php 
+					}
+					 }
+					?>
+				</div>
+
+				<div class="button-wrap">
+          <a href="https://n-avtomatic.ru/asgproduct/" class="product-slider__link">Перейти в магазин</a>
+        </div>
+        
 			</div>
 		</section>
 
