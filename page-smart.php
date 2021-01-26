@@ -191,32 +191,27 @@
 
 				<div class="smart-equip__col d-flex">
 
-					<?php 
+        <?
+           $args = array(
+            'posts_per_page' => 4,
+            'post_type' => 'asgproduct',
+            'tax_query' => array(
+              array(
+                'taxonomy' => 'asgproductcat',
+                'field' => 'id',
+                'terms' => array(41)
+              )
+            )
+          );
+          $query = new WP_Query($args);
+          
+          foreach( $query->posts as $post ){
+            $query->the_post();
+            get_template_part('template-parts/product-loop-new');
+          }  
+          wp_reset_postdata();
+        ?>
 
-$categories = get_categories( [
-	'taxonomy'     => 'category',
-	'type'         => 'post',
-	'child_of'     => 0,
-	'parent'       => '',
-	'orderby'      => 'name',
-	'order'        => 'ASC',
-	'hide_empty'   => 1,
-	'hierarchical' => 1,
-	'exclude'      => '',
-	'include'      => '',
-	'number'       => 4,
-	'pad_counts'   => false,
-	// полный список параметров смотрите в описании функции http://wp-kama.ru/function/get_terms
-] );
-
-if( $categories ){
-	foreach( $categories as $cat ){
-						?>
-						<?php get_template_part('template-parts/product-loop-new');?>
-						<?php 
-					}
-					 }
-					?>
 				</div>
 
 				<div class="button-wrap">
