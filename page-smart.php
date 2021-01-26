@@ -215,7 +215,7 @@
 				</div>
 
 				<div class="button-wrap">
-          <a href="https://n-avtomatic.ru/asgproduct/" class="product-slider__link">Перейти в магазин</a>
+          <a href="<?php echo get_post_type_archive_link('asgproduct')?>" class="product-slider__link">Перейти в магазин</a>
         </div>
         
 			</div>

@@ -4654,6 +4654,11 @@ position: relative;
   .smart-equip__col .products-loop {
     flex: 0 0 100%;
   }
+  .smart-equip .button-wrap a {
+    padding: 0; }
+  .smart-equip .button-wrap .product-slider__link {
+    width: 100%;
+    display: block; }
 }
 
 @media screen and (max-width:460px) {
