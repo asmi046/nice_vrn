@@ -12,28 +12,28 @@
  * @package automatic
  */
 
-get_header();
+get_header(); 
 ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main">
     <?php 
-      $arr_banner = carbon_get_theme_option('auto_banner');
-      if($arr_banner):
-    ?>
-    <div class="main-slider__wrapper">
+    $arr_banner = carbon_get_theme_option('auto_banner');
+    if($arr_banner):
+      ?>
+      <div class="main-slider__wrapper">
         <div class="slider-item__content">
           <div class="slider-item__subtitle"><?php echo $banner['auto_banner_title']?></div>
           <div class="slider-item__title"><?php echo $banner['auto_banner_subtitle']?></div>
         </div>
-    <section class="main-slider">
-      <?php 
+        <section class="main-slider">
+          <?php 
 
-      $insex = 0;
-      foreach($arr_banner as $banner):?>
-      <div class="slider-item" id = "hiddenSlideText<?php echo $insex; ?>" data-slidetext="<?php echo $banner['auto_banner_title']?>" data-doptext="<?php echo $banner['auto_banner_subtitle']?>" style="background-image: url(<?php echo wp_get_attachment_image_src($banner['auto_banner_img'], 'full')[0];?>)">
-      </div>
-      <?php $insex++; endforeach;?>
+          $insex = 0;
+          foreach($arr_banner as $banner):?>
+            <div class="slider-item" id = "hiddenSlideText<?php echo $insex; ?>" data-slidetext="<?php echo $banner['auto_banner_title']?>" data-doptext="<?php echo $banner['auto_banner_subtitle']?>" style="background-image: url(<?php echo wp_get_attachment_image_src($banner['auto_banner_img'], 'full')[0];?>)">
+            </div>
+            <?php $insex++; endforeach;?>
       <!-- <div class="slider-item" style="background-image: url(img/ohd_commercial_2.png)">
         <div class="slider-item__content">
           <div class="slider-item__subtitle">Комплекты автоматики для промышленных ворот</div>
@@ -41,34 +41,35 @@ get_header();
         </div>
       </div> -->
     </section>
-    </div>
-    <?php endif;?>
-        <script type="text/javascript">
-            jQuery('.main-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-            jQuery(".slider-item__subtitle").html(jQuery("#hiddenSlideText"+nextSlide).data("slidetext"));
-            jQuery(".slider-item__title").html(jQuery("#hiddenSlideText"+nextSlide).data("doptext"));
-          });
-          
-            jQuery('.main-slider').on('init', function(event, slick, currentSlide, nextSlide){
-            jQuery(".slider-item__subtitle").html(jQuery("#hiddenSlideText0").data("slidetext"));
-            jQuery(".main-slider__info-date").html(jQuery(".programms-date").html());
-            jQuery(".slider-item__title").html(jQuery("#hiddenSlideText0").data("doptext"));
-            
-          });
-        </script>
-    <section class="about">
-      <div class="container">
-        <div class="about-photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/about.png)"></div>
-        <div class="about-content">
-          <h1 class="section-title"><?php echo carbon_get_theme_option('about_home_title');?></h1>
-          <?php echo carbon_get_theme_option('about_home');?>
-        </div>
-      </div>
-    </section>
-    <?php get_template_part('template-parts/product-slider');?>
+  </div>
+<?php endif;?>
+<script type="text/javascript">
+  jQuery('.main-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+    jQuery(".slider-item__subtitle").html(jQuery("#hiddenSlideText"+nextSlide).data("slidetext"));
+    jQuery(".slider-item__title").html(jQuery("#hiddenSlideText"+nextSlide).data("doptext"));
+  });
 
-    <?php get_template_part('template-parts/main-bnr');?>
-    <?php 
+  jQuery('.main-slider').on('init', function(event, slick, currentSlide, nextSlide){
+    jQuery(".slider-item__subtitle").html(jQuery("#hiddenSlideText0").data("slidetext"));
+    jQuery(".main-slider__info-date").html(jQuery(".programms-date").html());
+    jQuery(".slider-item__title").html(jQuery("#hiddenSlideText0").data("doptext"));
+
+  });
+</script>
+<section class="about">
+  <div class="container">
+    <div class="about-photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/about.png)"></div>
+    <div class="about-content">
+      <h1 class="section-title"><?php echo carbon_get_theme_option('about_home_title');?></h1>
+      <?php echo carbon_get_theme_option('about_home');?>
+    </div>
+  </div>
+</section>
+
+<?php get_template_part('template-parts/product-slider');?>
+
+<?php get_template_part('template-parts/main-bnr');?>
+<?php 
     // $args = array(
     //   'taxonomy' => 'asgproductcat',
     //   'hide_empty' => 0,
@@ -77,7 +78,7 @@ get_header();
     // );
     // $cat = get_categories($args);
     // if($cat):
-    ?>
+?>
 <!--     <section class="category-wrapper">
       <div class="container">
         <?php foreach($cat as $item):
@@ -90,8 +91,8 @@ get_header();
       <?php endforeach;?>
       </div>
     </section> -->
-  <?php //endif;?>
-  <?php get_template_part('template-parts/main-products');?>
+    <?php //endif;?>
+    <?php get_template_part('template-parts/main-products');?>
 <!--     <section class="about">
       <div class="container">
         <div class="about-header">
@@ -103,6 +104,21 @@ get_header();
         </div>
       </div>
     </section> -->
+
+  <a href="<?php echo get_permalink(2951);?>"> 
+    <section class="smart-conven">
+      <div class="container">
+        <h2>
+          Умный дом FIBARO <br> в Воронеже
+        </h2>
+        <p>
+          Подбор, установка и обслуживание <br> комплектов умного дома FIBARO <br>  
+          от сертифицированных специалистов
+        </p>
+      </div>
+    </section>
+  </a>
+
     <?php get_template_part('template-parts/news-events');?>
 <!--     <section class="news">
       <div class="container">
