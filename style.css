@@ -4617,6 +4617,21 @@ position: relative;
   }
 }
 
+@media screen and (max-width:515px) {
+  .smart {
+    position: relative;
+    background-image: url(img/smart-bg-mob-2.jpg); }
+  .smart:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.3);
+    z-index: 2; }
+  }
+
 @media screen and (max-width:480px) {
   .smart {
     padding: 70px 0; }
@@ -4625,9 +4640,10 @@ position: relative;
     line-height: 45px; }
   .smart-control__icon {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   .smart-control__icon img {
-    width: 60%;
+    width: 48%;
     margin-bottom: 30px;
   }
     .smart-control__icon img:last-child {
@@ -4642,14 +4658,16 @@ position: relative;
   .smart-center__item-r p {
     text-align: justify;
   }
-  .smart-advant__item {
-    display: flex;
-    flex-direction: column;
+  .smart-advant__item:last-child {
+    margin-bottom: 0;
   }
   .smart-advant__item:before {
-    margin-bottom: 20px; }
+    height: 75px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+    margin-top: -10px; }
   .icon-sm-06:before {
-    height: 30px; }
+    height: 95px; }
   .smart-equip__col .products-loop {
     flex: 0 0 100%;
   }
@@ -4806,12 +4824,6 @@ position: relative;
   .smart {
     background-position: 30% 0%; }
 }
-
-@media screen and (max-width:375px) {
-  .smart-control__icon img {
-    width: 100%;
-  }
- }
 
 @media screen and (max-width:360px) {
   .making-calc h2, 
