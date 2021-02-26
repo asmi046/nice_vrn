@@ -20,10 +20,10 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
+>>> TABLE OF CONTENTS: 
 ----------------------------------------------------------------
 # Normalize
-# Typography 
+# Typography  
 # Elements
 # Forms 
 # Navigation
@@ -4157,6 +4157,9 @@ position: relative;
   .smart-conven h2,
   .smart-conven p {
     color: #fff; }
+  .entry-content figure {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width:1000px) {
