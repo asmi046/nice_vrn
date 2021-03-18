@@ -1601,10 +1601,10 @@ nav .menu a {
     left: 0
   }
 
-  nav {
-    margin-top: 54px
+/*  nav {
+    margin-top: 54px;
   }
-
+*/
   .header {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
@@ -1724,6 +1724,9 @@ nav .menu a {
   }
   .catalog-item {
     width: 30%;
+  }
+  .header-phone {
+    font-size: 18px;
   }
 }
 

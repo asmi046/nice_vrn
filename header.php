@@ -22,7 +22,7 @@ if(is_home() || is_front_page()) {
 	<meta name="google-site-verification" content="SvOenqKTguKR4ZGqU6_nUrM-fA1gyeySXGa8PkFV2hA" />
   <meta name="yandex-verification" content="aa644970b9f99efa" /> 
 
-  <meta name="cmsmagazine" content="f7245597f5b3579a3db3d69ddef2a8bf" />
+  <meta name="cmsmagazine" content="f7245597f5b3579a3db3d69ddef2a8bf" /> 
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -250,7 +250,7 @@ if(is_home() || is_front_page()) {
       <div class="header-content">
         <div class="header-contacts">
           <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>" >
-            <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" />
+            <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
             <input type="submit" id="searchsubmit" value="" />
           </form>
           <a href="<?php echo get_permalink(65);?>" class="header-cart">
@@ -279,8 +279,8 @@ if(is_home() || is_front_page()) {
           </a>
           <div class="header-phone__wrap">
             <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone_3');?></a>
-<!--             <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone');?></a>
-            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phones_2'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phones_2');?></a> -->
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone');?></a>
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phones_2'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phones_2');?></a>
           </div>
           <div class="hamburger"></div>
         </div>
