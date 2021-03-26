@@ -63,7 +63,7 @@ if(is_home() || is_front_page()) {
         </div>
       </div>
 
-      <div class = "modalline" id = "lineMsg">
+      <div class = "modalline" id = "lineMsg"> 
       </div>
     </div>
   </div>
@@ -278,9 +278,10 @@ if(is_home() || is_front_page()) {
             <span><?php echo $bcount;?></span>
           </a>
           <div class="header-phone__wrap">
-            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone_3');?></a>
-            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone');?></a>
-            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phones_2'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phones_2');?></a>
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="header-phone header-phone_main"><?php echo carbon_get_theme_option('as_phone_3');?></a>
+            <p class="header-phone__subtitle">Бесплатно по территории РФ</p>
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>" class="header-phone header-phone_db"><?php echo carbon_get_theme_option('as_phone');?></a>
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phones_2'))?>" class="header-phone header-phone_db"><?php echo carbon_get_theme_option('as_phones_2');?></a>
           </div>
           <div class="hamburger"></div>
         </div>

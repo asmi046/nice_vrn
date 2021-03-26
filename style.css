@@ -23,7 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 >>> TABLE OF CONTENTS: 
 ----------------------------------------------------------------
 # Normalize
-# Typography  
+# Typography   
 # Elements
 # Forms 
 # Navigation
@@ -1822,6 +1822,18 @@ a {
 .header-phone {
   font-size: 22px;
   color: #fff
+}
+
+.header-phone_main {
+  font-size: 30px !important;
+}
+.header-phone_db {
+  font-size: 22px !important;
+}
+
+.header-phone__subtitle {
+  font-size: 12px;
+  margin: 0 0 8px 0;
 }
 
 .header-cart {
@@ -4633,7 +4645,7 @@ position: relative;
     bottom: 0;
     background: rgba(0,0,0,.3);
     z-index: 2; }
-  }
+}
 
 @media screen and (max-width:480px) {
   .smart {

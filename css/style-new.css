@@ -677,7 +677,9 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   text-align: right;
   margin-right: 30px;
   font-family: Arimo, sans-serif;
-  padding-top: 14px
+  /*padding-top: 14px;*/
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-phone {
@@ -1805,9 +1807,9 @@ nav .menu a {
     height: 88px
   }
 
-  .header-content {
+/*  .header-content {
     padding-top: 0
-  }
+  }*/
 
   .main-bnr__subtitle {
     font-size: 32px
@@ -1892,6 +1894,12 @@ nav .menu a {
   }
 }
 
+@media screen and (max-width:630px) {
+  .header-phone_main {
+    font-size: 26px !important;
+  }
+}
+
 @media screen and (max-width:600px) {
   .main-bnr .container {
     -webkit-box-orient: vertical;
@@ -1915,6 +1923,15 @@ nav .menu a {
 
   .header-phone {
     padding-left: 10px
+  }
+}
+
+@media screen and (max-width:515px) {
+  .header-phone_main {
+    font-size: 23px !important;
+  }
+  .header-phone_db {
+    font-size: 20px !important;
   }
 }
 
@@ -2025,6 +2042,9 @@ nav .menu a {
   }
   .slider-nav__item {
     height: 100px;
+  }
+  .header-content {
+    padding: 0;
   }
 }
 
