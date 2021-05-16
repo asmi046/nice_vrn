@@ -4190,7 +4190,7 @@ article, .entry-header {
   max-width: 274px;
   width: 100%;
   margin-right: 46px;
-  margin-bottom: 40px;
+  margin-bottom: 40px !important;
 }
 .polymer-advantages .advantages__item:last-child {
   margin-bottom: 0;
@@ -4260,6 +4260,9 @@ article, .entry-header {
 
 
 
+
+
+
 @media screen and (max-width:1550px) {
     .container_db {
      padding: 0 14px; } }
@@ -4302,6 +4305,9 @@ article, .entry-header {
   .smart-advant__item:before {
     background-position: 50% 50%;
     margin-right: 35px;
+  }
+  .about-heating .container {
+    padding: 10px 14px 10px 14px;
   }
 }
 
@@ -4365,6 +4371,9 @@ article, .entry-header {
   .icon-sm-06:before {
     margin-right: 8px !important;
  }
+ .heating-card {
+  flex: 0 1 32%;
+  margin-right: 10px; }
 }
 
 @media screen and (max-width:1150px) {
@@ -4474,6 +4483,21 @@ position: relative;
   .entry-content figure {
     margin: 0;
   }
+  .heating-services {
+    padding: 56px 0; }
+  .heating-services__row {
+    justify-content: space-between; }
+  .heating-card {
+    flex: 0 1 33%;
+    margin-right: 0;
+  }
+  .heating-card__text-block {
+    padding: 10px; }
+  .polymer-advantages .advantages__column {
+    justify-content: space-between;
+  }
+  .polymer-advantages .advantages__item {
+    margin-right: 0; }
 }
 
 @media screen and (max-width:1000px) {
@@ -4526,6 +4550,8 @@ position: relative;
      margin-right: 0; }
   .smart-equip__col .products-loop {
     width: 23%; }
+  .heating-card {
+    flex: 0 1 49%; }
 }
 
 @media screen and (max-width:900px) {
@@ -4762,8 +4788,19 @@ position: relative;
   }
   .smart-conven {
     padding: 100px 0; }
+  .about-heating h1 br,
+  .about-heating p br,
   .smart-conven h2 br, .smart-conven p br {
     display: none; }
+  .polymer-advantages .advantages__column {
+    justify-content: space-around;
+  }
+  .heating-info p {
+    margin-bottom: 10px; }
+  .polymer-info-text {
+    padding: 30px 0; }
+  .about-electrician p {
+    margin-right: 0; }
 }
 
 @media screen and (max-width:700px) {
@@ -4841,6 +4878,29 @@ position: relative;
 .smart-control__icon img {
     width: 30%; }
   }
+
+@media screen and (max-width:610px) {
+  .heating-card {
+    flex: 0 1 100%; }
+  .heating-card__text-block p br,
+  .heating-card__text-block h4 br {
+    display: none; }
+  .heating-info .container {
+    min-height: 400px;
+    align-items: flex-start;
+    padding-top: 55px;}
+  .heating-info h2 {
+    font-size: 50px;
+    line-height: 45px;
+    margin: 0 0 20px 0;
+  }
+  .heating-info p {
+    font-size: 35px;
+    line-height: 38px;
+  }
+  .heating-info p br {
+    display: none; }
+}
 
 @media screen and (max-width:600px) {
   .header-phone {
@@ -4949,6 +5009,21 @@ position: relative;
     bottom: 0;
     background: rgba(0,0,0,.3);
     z-index: 2; }
+  .about-heating .container {
+    min-height: 400px;
+  }
+  .about-heating h1 {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .about-heating p {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .heating-services {
+    padding: 35px 0; }
+  .heating-services h2 {
+    margin: 0 0 25px 0; }
 }
 
 @media screen and (max-width:480px) {
@@ -5117,6 +5192,13 @@ position: relative;
   .news-item__title {
     padding-left: 10px;
   }
+  .heating-info h2 {
+    font-size: 45px;
+    line-height: 40px; }
+  .heating-info p {
+     font-size: 30px;
+     line-height: 33px;
+  }
 }
 
 @media screen and (max-width:414px) {
@@ -5144,6 +5226,30 @@ position: relative;
   }
   .smart {
     background-position: 30% 0%; }
+    .about-heating h1 {
+      font-size: 30px;
+      line-height: 38px;
+      margin-bottom: 15px;
+  }
+  .about-heating .container {
+    min-height: 350px;
+  }
+  .about-heating p {
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .heating-card__btn {
+    width: 100%; }
+  .btn-wrap .heating-card__btn {
+    width: 156px; }
+  .heating-info h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .heating-info p {
+    font-size: 28px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width:360px) {
