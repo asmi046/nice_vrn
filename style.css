@@ -4153,7 +4153,20 @@ article, .entry-header {
   margin: 0;
 }
 .polymer-info-text ul li {
-  
+  list-style: none;
+  display: flex;
+  margin-bottom: 16px;
+}
+.polymer-info-text ul li:last-child {
+  margin-bottom: 0;
+}
+.polymer-info-text ul li:before {
+  content: '';
+  float: left;
+  flex: 0 0 9px;
+  height: 9px;
+  background: #00549F;
+  margin: 5px 19px 0 0;
 }
 .polymer-info-text span {
   font-weight: bold;
@@ -4235,7 +4248,6 @@ article, .entry-header {
 .electrician-services__row .heating-card__img img {
   height: auto;
 }
-
 
 
 
