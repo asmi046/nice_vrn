@@ -67,6 +67,28 @@ if(is_home() || is_front_page()) {
       </div>
     </div>
   </div>
+
+  <div style="display: none;">
+    <div class="box-modal" id="construct-modal">
+      <div class="box-modal_close arcticmodal-close">закрыть</div>
+      <div class = "order-modal-wrapper" id = "lineIcon">
+        <div class="order-modal-photo"></div>
+        <div class="order-modal-form-wrap">
+          <h2>Заявка на расчет стоимости</h2>
+          <div class="order-modal-descr">Оставьте свой номер и мы свяжемся с Вами и рассчитаем стоимость исходя из Ваших потребностей</div>
+          <form action="">
+            <input type="tel" name="tel" placeholder="Ваш телефон">
+            <a href="#" class="uniSendBtn button">Отправить</a>
+          </form>
+          <div class="order-modal-descr">Также Вы можете связаться с нами по телефону <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>"><?php echo carbon_get_theme_option('as_phone');?></a> или напишите на Email <a href="mailto:<?php echo carbon_get_theme_option('as_email');?>"><?php echo carbon_get_theme_option('as_email');?></a></div>
+        </div>
+      </div>
+
+      <div class = "modalline" id = "lineMsg"> 
+      </div>
+    </div>
+  </div>
+
   <div style="display: none;">
     <div class="box-modal" id="order-modal">
       <div class="box-modal_close arcticmodal-close">закрыть</div>

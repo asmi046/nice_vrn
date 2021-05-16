@@ -2451,18 +2451,20 @@ a {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+#construct-modal,
 #work-modal__section,
 #work-modal {
   width: 600px;
   max-width: unset;
   padding: 0;
-}
+} 
 #work-modal__section {
   width: 100%;
   background-color: #ebebeb;
   border-radius: 20px;
   margin-bottom: 30px;
 }
+#construct-modal .order-modal-form-wrap,
 #work-modal__section .order-modal-form-wrap,
 #work-modal .order-modal-form-wrap {
   padding: 10px;
@@ -2472,6 +2474,11 @@ a {
   height: auto;
   background-image: url(./images/electrician.jpg);
 }
+#construct-modal .order-modal-photo {
+  height: auto;
+  background-image: url(./img/construct-modal-img.jpg);
+}
+#construct-modal form,
 #work-modal__section form,
 #work-modal form {
   display: -webkit-flex;
@@ -2480,12 +2487,14 @@ a {
   display: -o-flex;
   display: flex;
 }
+#construct-modal input,
 #work-modal__section input,
 #work-modal input {
   margin-right: 20px;
   padding-left: 15px;
   border: 1px solid #00549f;
 }
+#construct-modal .button,
 #work-modal__section .button,
 #work-modal .button {
   min-width: unset;
@@ -4805,9 +4814,11 @@ position: relative;
     -o-flex-direction: row;
     flex-direction: row;
   }
+  #construct-modal,
   #work-modal {
     width: 94%;
   }
+  #construct-modal .order-modal-photo,
   #work-modal .order-modal-photo {
     display: none;
   }
@@ -5080,6 +5091,7 @@ position: relative;
     margin-bottom: 18px;
     background-position: center bottom;
   }
+  #construct-modal form,
   #work-modal form {
     -webkit-flex-direction: column;
     -moz-flex-direction: column;
@@ -5087,6 +5099,7 @@ position: relative;
     -o-flex-direction: column;
     flex-direction: column;
   }
+  #construct-modal input,
   #work-modal form input {
     margin-bottom: 14px;
     height: 40px;
