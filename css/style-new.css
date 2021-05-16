@@ -679,7 +679,7 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
   font-family: Arimo, sans-serif;
   /*padding-top: 14px;*/
   padding-top: 10px;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .header-phone {
@@ -1592,7 +1592,8 @@ nav .menu a:hover {
 
 @media screen and (max-width:1601px) {
 nav .menu a { 
-  padding: 6px 0px 12px 13px;
+  /* padding: 6px 0px 12px 13px; */
+  padding: 8px 6px;
   }
 }
 
@@ -1615,11 +1616,11 @@ nav .menu a {
   }
 }
 
-@media screen and (max-width:1440px) {
+/* @media screen and (max-width:1440px) {
 nav .menu a { 
   padding: 6px 0px 12px 18px;
   }
-}
+} */
 
 @media screen and (max-width:1300px) {
   .container {
@@ -1662,11 +1663,11 @@ nav .menu a {
   }
 }
 
-@media screen and (max-width:1200px) {
+/* @media screen and (max-width:1200px) {
 nav .menu a { 
   padding: 6px 0px 12px 11px;
   }
-}
+} */
 
 @media screen and (max-width:1150px) {
   .footer .container {
