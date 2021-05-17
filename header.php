@@ -317,17 +317,6 @@ if(is_home() || is_front_page()) {
           </form>
         </div>
         <nav>
-          <!-- <ul class="menu ul-clean">
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Магазин</a></li>
-            <li><a href="#">Наши работы</a></li>
-            <li><a href="#">О компании</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Оплата и доставка</a></li>
-            <li><a href="#">Инструкции</a></li>
-            <li><a href="#">Сертификаты</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul> -->
           <?php main_menu();?>
         </nav>
       </div>

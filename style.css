@@ -4258,8 +4258,15 @@ article, .entry-header {
   height: auto;
 }
 
-
-
+.heating-galery {
+  padding: 35px 0;
+}
+.heating-galery h2 {
+  font-size: 32px;
+  line-height: 37px;
+  font-weight: bold;
+  margin: 0 0 35px 0;
+}
 
 
 
@@ -5024,6 +5031,10 @@ position: relative;
     padding: 35px 0; }
   .heating-services h2 {
     margin: 0 0 25px 0; }
+  .heating-galery .blocks-gallery-item {
+    margin: 0 0 16px 0;
+    flex: 0 1 100%;
+  }
 }
 
 @media screen and (max-width:480px) {

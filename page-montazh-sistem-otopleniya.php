@@ -158,6 +158,16 @@ get_header();
 
 		<?php get_template_part('template-parts/heating-advantages-block');?>
 
+    <section class="heating-galery"> 
+			<div class="container">
+				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+				<h2>ФОТО НАШИХ РАБОТ</h2>
+					<?php the_content();?>
+					<?php endwhile;?>
+				<?php endif; ?> 
+			</div>
+		</section>
+
 	</main><!-- #main -->
 </div><!-- #primary -->
 
