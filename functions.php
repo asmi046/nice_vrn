@@ -141,6 +141,7 @@ function auto_scripts() {
 	wp_enqueue_style('light', get_template_directory_uri() . '/css/magnific.css', array(), null, 'all');
 	wp_enqueue_style('bascet', get_template_directory_uri() . '/css/backet.css', array(), null, 'all');
 	wp_enqueue_style('new', get_template_directory_uri() . '/css/style-new.css', array(), null, 'all');
+	// wp_enqueue_style("style-lightbox", get_template_directory_uri().'/css/lightbox.min.css', array(), null, 'all'); //Лайтбокс (стили)
 
 	wp_enqueue_script('jquery');
 
@@ -153,6 +154,8 @@ function auto_scripts() {
 
 	wp_enqueue_script("light", get_template_directory_uri() . '/js/magnific.js', array(), null, true);
 	wp_enqueue_script("basket", get_template_directory_uri() . '/js/bascet.js', array(), null, true);
+
+	// wp_enqueue_script( 'lightbox', get_template_directory_uri().'/js/lightbox.min.js', array(), null, true); //Лайтбокс
 
 	wp_enqueue_script('main', get_template_directory_uri() . '/js/custom.js', array(), null, true);
 

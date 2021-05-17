@@ -738,7 +738,8 @@ nav .menu {
   display: -o-flex;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav .menu a { 

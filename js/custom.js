@@ -18,24 +18,24 @@ jQuery(document).ready(function ($) {
     cssEase: 'linear'
   });
   $('.slider-for').slick({
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows: false,
-   asNavFor: '.slider-nav'
- });
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slider-nav'
+  });
   var vertical = true;
-  if($(window).width() < 500) {
+  if ($(window).width() < 500) {
     vertical = false;
   }
   $('.slider-nav').slick({
-   slidesToShow: 3,
-   slidesToScroll: 1,
-   asNavFor: '.slider-for',
-   arrows: false,
-   verticalSwiping: true,
-   vertical: vertical,
-   focusOnSelect: true
- });
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    arrows: false,
+    verticalSwiping: true,
+    vertical: vertical,
+    focusOnSelect: true
+  });
   $(".tab_item").not(":first").hide();
   $(".tab").click(function () {
     $(".tab").removeClass("active").eq($(this).index()).addClass("active");
@@ -74,17 +74,17 @@ jQuery(document).ready(function ($) {
   });
 
 
-  jQuery(".dialog-cb-button__decstop a").click(function(e){
+  jQuery(".dialog-cb-button__decstop a").click(function (e) {
     e.preventDefault();
-    headerwin = jQuery(this).data("headerwin"); 
+    headerwin = jQuery(this).data("headerwin");
     btn = jQuery(this).data('btn');
-    
+
     jQuery('#phone-modal').arcticmodal();
   });
 
-  $(".instruction-item__title").click(function() {
+  $(".instruction-item__title").click(function () {
     $(this).next().slideToggle();
-    if($(this).children('span').hasClass('active')) {
+    if ($(this).children('span').hasClass('active')) {
       $(this).children('span').removeClass('active');
     } else {
       $(this).children('span').addClass('active')
@@ -92,34 +92,34 @@ jQuery(document).ready(function ($) {
   });
 
   $('figure img').parent('a').attr("data-lightbox", 'gallery');
-  
-  var inputmask_96e76a5f = {"mask":"+7(999)999-99-99"};
+
+  var inputmask_96e76a5f = { "mask": "+7(999)999-99-99" };
   jQuery("input[type=tel]").inputmask(inputmask_96e76a5f);
 
   var $page = $('html, body');
-  $('.menu a[href*="#"]').click(function() {
+  $('.menu a[href*="#"]').click(function () {
     $page.animate({
       scrollTop: $($.attr(this, 'href')).offset().top - 100
     }, 400);
     return false;
   });
 
-// //Калькулятор
-$('.making-calc__input').on('keyup', function(){
-  height  = document.getElementById('height').value;
-  width  = document.getElementById('width').value;
-  if(width == ""){
-// alert("Вы не указали Ширину ворот");
-} else if(height == ""){
-// alert("Вы не указали Высоту ворот");
-} else {
-  cena = 0.005;
-  ploschad = parseFloat (height)* parseFloat (width);
-// document.getElementById('ploschad').innerHTML = "Площадь равна: "+ ploschad +" кв. м.";
-stoimost = ploschad*cena;
-document.getElementById('stoimost').innerHTML = ""+ stoimost +" руб.";
-}
-});
+  // //Калькулятор
+  $('.making-calc__input').on('keyup', function () {
+    height = document.getElementById('height').value;
+    width = document.getElementById('width').value;
+    if (width == "") {
+      // alert("Вы не указали Ширину ворот");
+    } else if (height == "") {
+      // alert("Вы не указали Высоту ворот");
+    } else {
+      cena = 0.005;
+      ploschad = parseFloat(height) * parseFloat(width);
+      // document.getElementById('ploschad').innerHTML = "Площадь равна: "+ ploschad +" кв. м.";
+      stoimost = ploschad * cena;
+      document.getElementById('stoimost').innerHTML = "" + stoimost + " руб.";
+    }
+  });
 
 });
 
