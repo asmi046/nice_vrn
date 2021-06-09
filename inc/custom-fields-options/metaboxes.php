@@ -83,6 +83,7 @@ Container::make('post_meta', 'as_video_instr', 'Видео-инструкция'
   // ->show_on_template('single-instruction.php')
   // ->where('post_template', '=', 'single-instruction.php')
   ->add_fields(array(
+    Field::make('rich_text', 'floors_table', 'Таблица с ценами'),
     Field::make('text', 'as_video_instr_video', 'Код видео с YouTube')
   ));
 Container::make('post_meta', 'as_cert', 'Сертификат/Инструкция')

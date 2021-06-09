@@ -135,12 +135,15 @@ add_action( 'widgets_init', 'auto_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function auto_scripts() {
-	wp_enqueue_style( 'auto-style', get_stylesheet_uri() );
 
-	wp_enqueue_style('light', get_template_directory_uri() . '/css/magnific.css', array(), null, 'all');
-	wp_enqueue_style('bascet', get_template_directory_uri() . '/css/backet.css', array(), null, 'all');
-	wp_enqueue_style('new', get_template_directory_uri() . '/css/style-new.css', array(), null, 'all');
+define("allversion", "1.0.1");
+
+function auto_scripts() {
+	wp_enqueue_style( 'auto-style', get_stylesheet_uri(), array(), allversion, 'all' );
+
+	wp_enqueue_style('light', get_template_directory_uri() . '/css/magnific.css', array(), allversion, 'all');
+	wp_enqueue_style('bascet', get_template_directory_uri() . '/css/backet.css', array(), allversion, 'all');
+	wp_enqueue_style('new', get_template_directory_uri() . '/css/style-new.css', array(), allversion, 'all');
 	// wp_enqueue_style("style-lightbox", get_template_directory_uri().'/css/lightbox.min.css', array(), null, 'all'); //Лайтбокс (стили)
 
 	wp_enqueue_script('jquery');
