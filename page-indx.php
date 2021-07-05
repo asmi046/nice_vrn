@@ -15,7 +15,7 @@
         
         <div class="info-new__card-body">
           <a href="#" class="info-new__card-img">
-            <img src="img" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/img/smart-card.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
             <h3>Умный дом</h3>
@@ -26,7 +26,7 @@
 
         <div class="info-new__card-body">
           <a href="#" class="info-new__card-img">
-            <img src="img" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/img/gate-automation.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
             <h3>Автоматика для ворот</h3>
@@ -38,7 +38,7 @@
 
         <div class="info-new__card-body">
           <a href="#" class="info-new__card-img">
-            <img src="img" alt="">
+            <img src="<?php echo get_template_directory_uri();?>/img/engin-card.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
             <h3>Инженерные системы</h3>

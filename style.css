@@ -4298,6 +4298,7 @@ article, .entry-header {
     flex-direction: column;
     background: #fff;
     border: 0.4px solid #707070;
+    border-top: none;
     overflow: hidden;
     /* margin-bottom: 15px; */
 }
@@ -4307,9 +4308,8 @@ article, .entry-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 1 100%;
-  min-height: 365px;
-  max-height: 365px;
+  flex: 0 1 558px;
+  max-height: 300px;
   position: relative;
   background: #EBEBEB;
   border-bottom: 1px solid #E8E8E8;
@@ -4344,6 +4344,7 @@ article, .entry-header {
   height: 80px;
   align-items: center;
   padding: 0 35px;
+  z-index: 1000;
 }
 
 .logo-new {
