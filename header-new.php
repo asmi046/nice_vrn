@@ -290,7 +290,6 @@ if(is_home() || is_front_page()) {
               <p class="header-phone__subtitle">Бесплатно по территории РФ</p>
             </div>
           </div>
-          <!-- <div class="hamburger"></div> -->
 
         </div>
       </div>
@@ -302,6 +301,41 @@ if(is_home() || is_front_page()) {
 				  <span></span>
 				  <span></span>
 			  </div>
+      </div>
+
+      <div class="header__mob-menu">
+        <div class="header__mob-menu-top">
+         <ul>
+          <li><a href="#">Автоматика для ворот</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Инструкции</a></li>
+          <li><a href="#">Наши работы</a></li>
+          <li><a href="#">Производство ворот</a></li>
+         </ul>
+         <ul>
+          <li><a href="#">Умный дом</a></li>
+          <li><a href="#">О умном доме Fibaro</a></li>
+          <li><a href="#">Оборудование</a></li>
+         </ul>
+         <ul>
+          <li><a href="#">Инженерные системы</a></li>
+          <li><a href="#">Монтаж электрооборудования</a></li>
+          <li><a href="#">Отопление и водоотведение</a></li>
+          <li><a href="#">Бетонные полы</a></li>
+          <li><a href="#">Наши работы</a></li>
+         </ul>
+        </div>
+
+        <div class="header__mob-menu-line"></div>
+
+        <div class="header__mob-menu-botom">
+          <ul>
+            <li><a href="#">О Компании</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Сертификаты</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
       </div>
       
     </header>

@@ -127,13 +127,13 @@ jQuery(document).ready(function ($) {
 //BURGER
 const iconMenu = document.querySelector(".icon-menu");
 // const body = document.querySelector("body");
-// const menuBody = document.querySelector(".mob-menu");
+const mobMenu = document.querySelector(".header__mob-menu");
 // const menuListItemElems = document.querySelector(".mob-menu__list");
 if (iconMenu) {
   iconMenu.addEventListener("click", function () {
     iconMenu.classList.toggle("active");
     // body.classList.toggle("lock");
-    // menuBody.classList.toggle("active");
+    mobMenu.classList.toggle("active");
   });
 }
 
