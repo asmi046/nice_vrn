@@ -213,6 +213,7 @@ if(is_home() || is_front_page()) {
     </div>
   </div>
   <div id="page" class="site">
+  <div class="blackout"></div>
 
  <?php
             $bsumm = 0;
@@ -302,8 +303,10 @@ if(is_home() || is_front_page()) {
 				  <span></span>
 			  </div>
       </div>
+      
+    </header>
 
-      <div class="header__mob-menu">
+    <div class="header__mob-menu">
         <div class="header__mob-menu-top">
          <ul>
           <li><a href="#">Автоматика для ворот</a></li>
@@ -337,7 +340,6 @@ if(is_home() || is_front_page()) {
           </ul>
         </div>
       </div>
-      
-    </header>
 
     <div id="content" class="site-content">
+     
