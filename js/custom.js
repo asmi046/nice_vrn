@@ -128,8 +128,6 @@ jQuery(document).ready(function ($) {
 const iconMenu = document.querySelector(".icon-menu");
 const blackOut = document.querySelector(".blackout");
 const mobMenu = document.querySelector(".header__mob-menu");
-// const body = document.querySelector("body");
-// const menuListItemElems = document.querySelector(".mob-menu__list");
 if (iconMenu) {
   iconMenu.addEventListener("click", function () {
     iconMenu.classList.toggle("active");
@@ -138,3 +136,12 @@ if (iconMenu) {
   });
 }
 
+// Закрытие моб меню при клике вне области меню 
+window.addEventListener('click', e => { // при клике в любом месте окна браузера
+  const target = e.target // находим элемент, на котором был клик
+  if (!target.closest('.icon-menu') && !target.closest('.header__mob-menu')) { // если этот элемент или его родительские элементы не окно навигации и не кнопка
+    iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
+    mobMenu.classList.remove('active')
+    blackOut.classList.remove("active");
+  }
+})
