@@ -3057,6 +3057,7 @@ article, .entry-header {
 }
 #content {
   margin-bottom: auto;
+  z-index: -1;
 }
 .nav-links {
   display: -webkit-flex;
@@ -4561,7 +4562,27 @@ article, .entry-header {
   visibility: visible;
 }
 
+.mob-search {
+	display: none;
+  margin-right: 10px;
+  border: none;
+  background: #fff;
+}
 
+.mob-search:after {
+  content: "";
+  float: right;
+  width: 23px;
+  height: 23px;
+  background-position: 0 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxnPg0KCQk8cGF0aCBmaWxsPSIjMDA1NDlmIiBkPSJNNTA4Ljg3NSw0OTMuNzkyTDM1My4wODksMzM4LjAwNWMzMi4zNTgtMzUuOTI3LDUyLjI0NS04My4yOTYsNTIuMjQ1LTEzNS4zMzlDNDA1LjMzMyw5MC45MTcsMzE0LjQxNywwLDIwMi42NjcsMA0KCQkJUzAsOTAuOTE3LDAsMjAyLjY2N3M5MC45MTcsMjAyLjY2NywyMDIuNjY3LDIwMi42NjdjNTIuMDQzLDAsOTkuNDExLTE5Ljg4NywxMzUuMzM5LTUyLjI0NWwxNTUuNzg2LDE1NS43ODYNCgkJCWMyLjA4MywyLjA4Myw0LjgxMywzLjEyNSw3LjU0MiwzLjEyNWMyLjcyOSwwLDUuNDU4LTEuMDQyLDcuNTQyLTMuMTI1QzUxMy4wNDIsNTA0LjcwOCw1MTMuMDQyLDQ5Ny45NTgsNTA4Ljg3NSw0OTMuNzkyeg0KCQkJIE0yMDIuNjY3LDM4NGMtOTkuOTc5LDAtMTgxLjMzMy04MS4zNDQtMTgxLjMzMy0xODEuMzMzUzEwMi42ODgsMjEuMzMzLDIwMi42NjcsMjEuMzMzUzM4NCwxMDIuNjc3LDM4NCwyMDIuNjY3DQoJCQlTMzAyLjY0NiwzODQsMjAyLjY2NywzODR6Ii8+DQoJPC9nPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPC9zdmc+DQo=');
+}
+
+.header__search {
+  display: none;
+}
 
 
 @media screen and (max-width:1550px) {
@@ -5427,6 +5448,24 @@ position: relative;
     display: none; }
   .header-phone__main .header-phone {
     font-size: 22px !important; }
+  .mob-search {
+    display: block; }
+  .header__search {
+    display: block;
+    position: fixed !important;
+    top: 0px;
+    width: 100%;
+    -webkit-box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+    box-shadow: 0 5px 5px rgb(0 0 0 / 30%);
+    margin: 0;
+    transition: all 0.3s ease-out;
+    z-index: 1; }
+  .header__search.active {
+    top: 40px;
+    transition: all 0.6s ease-out;
+  }
+  .header__search #s {
+    width: 100%;}
 }
 
 @media screen and (max-width:500px) {

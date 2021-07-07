@@ -145,3 +145,12 @@ window.addEventListener('click', e => { // при клике в любом ме�
     blackOut.classList.remove("active");
   }
 })
+
+// Строка поиска на мобилках 
+const mobsearch = document.querySelector(".mob-search");
+const headsearch = document.querySelector(".header__search");
+if (mobsearch) {
+  mobsearch.addEventListener("click", function () {
+    headsearch.classList.toggle("active");
+  });
+}

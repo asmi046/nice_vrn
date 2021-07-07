@@ -255,6 +255,7 @@ if(is_home() || is_front_page()) {
           <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
           <input type="submit" id="searchsubmit" value="" />
         </form>
+        <button class="mob-search"></button>
         <div class="header-contacts-new header-contacts">
           <a href="<?php echo get_permalink(65);?>" class="header-cart">
             <?php
@@ -340,6 +341,11 @@ if(is_home() || is_front_page()) {
           </ul>
         </div>
       </div>
+
+      <form role="search" method="get" id="searchform" class="header__search" action="<?php echo home_url( '/' ) ?>" >
+          <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
+          <input type="submit" id="searchsubmit" value="" />
+        </form>
 
     <div id="content" class="site-content">
      
