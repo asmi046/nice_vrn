@@ -19,8 +19,10 @@
           </a>
           <div class="info-new__card-text-block">
             <h3>Умный дом</h3>
-            <a href="#" class="info-new__card-link">О умном доме Fibaro</a>
-            <a href="#" class="info-new__card-link">Оборудование</a>
+            <ul>
+              <li><a href="#" class="info-new__card-link">О умном доме Fibaro</a></li>
+              <li><a href="#" class="info-new__card-link">Оборудование</a></li>
+            </ul>
           </div>
         </div>
 
@@ -30,9 +32,11 @@
           </a>
           <div class="info-new__card-text-block">
             <h3>Автоматика для ворот</h3>
-            <a href="#" class="info-new__card-link">Магазин</a>
-            <a href="#" class="info-new__card-link">Инструкции</a>
-            <a href="#" class="info-new__card-link">Наши работы</a>
+            <ul>
+              <li><a href="#" class="info-new__card-link">Магазин</a></li>
+              <li><a href="#" class="info-new__card-link">Инструкции</a></li>
+              <li><a href="#" class="info-new__card-link">Наши работы</a></li>
+            </ul>
           </div>
         </div>
 
@@ -42,10 +46,12 @@
           </a>
           <div class="info-new__card-text-block">
             <h3>Инженерные системы</h3>
-            <a href="#" class="info-new__card-link">Монтаж электрооборудования</a>
-            <a href="#" class="info-new__card-link">Отопление и водоотведение</a>
-            <a href="#" class="info-new__card-link">Бетонные полы</a>
-            <a href="#" class="info-new__card-link">Наши работы</a>
+            <ul>
+              <li><a href="#" class="info-new__card-link">Монтаж электрооборудования</a></li>
+              <li><a href="#" class="info-new__card-link">Отопление и водоотведение</a></li>
+              <li><a href="#" class="info-new__card-link">Бетонные полы</a></li>
+              <li><a href="#" class="info-new__card-link">Наши работы</a></li>
+            </ul>
           </div>
         </div>
 
