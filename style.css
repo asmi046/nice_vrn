@@ -4364,6 +4364,8 @@ article, .entry-header {
 
 /* New header  */
 .header-new {
+  position: fixed !important;
+  width: 100%;
   height: 80px;
   align-items: center;
   padding: 0 35px;
@@ -4473,7 +4475,6 @@ article, .entry-header {
   margin-left: auto;
   margin-right: 39px;
 }
-/* New header End  */
 
 .header__mob-menu {
   position: fixed;
@@ -4584,6 +4585,32 @@ article, .entry-header {
   display: none;
 }
 
+.mob-callback__phone {
+  display: none;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  height: 30px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.mob-callback__phone:before {
+  content: "";
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-size: 85%;
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pg0KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE5LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPg0KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJDYXBhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzg0IDM4NCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzg0IDM4NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPGc+DQoJPGc+DQoJCTxwYXRoIGZpbGw9IiMwMDU0OWYiIGQ9Ik0zNTMuMTg4LDI1Mi4wNTJjLTIzLjUxLDAtNDYuNTk0LTMuNjc3LTY4LjQ2OS0xMC45MDZjLTEwLjcxOS0zLjY1Ni0yMy44OTYtMC4zMDItMzAuNDM4LDYuNDE3bC00My4xNzcsMzIuNTk0DQoJCQljLTUwLjA3My0yNi43MjktODAuOTE3LTU3LjU2My0xMDcuMjgxLTEwNy4yNmwzMS42MzUtNDIuMDUyYzguMjE5LTguMjA4LDExLjE2Ny0yMC4xOTgsNy42MzUtMzEuNDQ4DQoJCQljLTcuMjYtMjEuOTktMTAuOTQ4LTQ1LjA2My0xMC45NDgtNjguNTgzQzEzMi4xNDYsMTMuODIzLDExOC4zMjMsMCwxMDEuMzMzLDBIMzAuODEzQzEzLjgyMywwLDAsMTMuODIzLDAsMzAuODEzDQoJCQlDMCwyMjUuNTYzLDE1OC40MzgsMzg0LDM1My4xODgsMzg0YzE2Ljk5LDAsMzAuODEzLTEzLjgyMywzMC44MTMtMzAuODEzdi03MC4zMjNDMzg0LDI2NS44NzUsMzcwLjE3NywyNTIuMDUyLDM1My4xODgsMjUyLjA1MnoiDQoJCQkvPg0KCTwvZz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjxnPg0KPC9nPg0KPGc+DQo8L2c+DQo8Zz4NCjwvZz4NCjwvc3ZnPg0K');
+}
+
+/* New header End  */
 
 @media screen and (max-width:1550px) {
     .container_db {
@@ -5461,11 +5488,18 @@ position: relative;
     transition: all 0.3s ease-out;
     z-index: 1; }
   .header__search.active {
-    top: 40px;
+    top: 50px;
     transition: all 0.6s ease-out;
   }
   .header__search #s {
+    padding: 0 40px 0 10px;
+    font-size: 14px;
     width: 100%;}
+  .logo-new {
+    flex: 0 0 110px; }
+  .header__search #searchsubmit {
+    top: -2px;
+    background-size: 48%; }
 }
 
 @media screen and (max-width:500px) {
@@ -5477,8 +5511,8 @@ position: relative;
   .header-contacts-new .header-cart {
     margin-right: 20px !important;
     margin-bottom: 0 !important;}
-  .logo-new {
-    flex: 0 0 110px; }
+  .header__search.active {
+    top: 40px; }
 }
 
 @media screen and (max-width:480px) {
@@ -5656,6 +5690,25 @@ position: relative;
   }
 }
 
+@media screen and (max-width:430px) {
+  .header-phone__wrap-new {
+    display: none !important; }
+  .header-content-new {
+    margin-right: 10px; }
+  .header-contacts-new {
+    flex: 0 0 85px;
+    justify-content: flex-end !important; }
+  .mob-callback__phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .header-contacts-new .header-cart {
+    margin-right: 23px !important; }
+  .header__menu-burg {
+    flex: 0 0 35px; }
+}
+
+
 @media screen and (max-width:420px) {
   .header-contacts-new .header-cart {
     order: 1 !important; }
@@ -5663,6 +5716,10 @@ position: relative;
     order: 2;}
   .header-phone__main .header-phone {
     margin-bottom: 0 !important; }
+  .header-contacts-new .header-cart {
+    order: 1 !important; }
+  .mob-callback__phone {
+    order: 2; }
 }
 
 @media screen and (max-width:414px) {

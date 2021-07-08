@@ -292,6 +292,7 @@ if(is_home() || is_front_page()) {
               <p class="header-phone__subtitle">Бесплатно по территории РФ</p>
             </div>
           </div>
+          <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="mob-callback__phone"></a>
 
         </div>
       </div>
