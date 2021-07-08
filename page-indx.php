@@ -12,31 +12,24 @@
     <!-- <div class="container "> -->
 
       <div class="info-new__row">
-        
-        <div class="info-new__card-body">
-          <a href="#" class="info-new__card-img">
-            <img src="<?php echo get_template_directory_uri();?>/img/smart-card.jpg" alt=""> 
-          </a>
-          <div class="info-new__card-text-block">
-            <h3>Умный дом</h3>
-            <ul>
-              <li><a href="#" class="info-new__card-link">О умном доме Fibaro</a></li>
-              <li><a href="#" class="info-new__card-link">Оборудование</a></li>
-            </ul>
-          </div>
-        </div>
 
         <div class="info-new__card-body">
           <a href="#" class="info-new__card-img">
             <img src="<?php echo get_template_directory_uri();?>/img/gate-automation.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
-            <h3>Автоматика для ворот</h3>
-            <ul>
-              <li><a href="#" class="info-new__card-link">Магазин</a></li>
-              <li><a href="#" class="info-new__card-link">Инструкции</a></li>
-              <li><a href="#" class="info-new__card-link">Наши работы</a></li>
-            </ul>
+            <span>Автоматика для ворот</span>
+            <a href="#" class="info-new__card-link">Подробнее</a>
+          </div>
+        </div>
+
+        <div class="info-new__card-body">
+          <a href="#" class="info-new__card-img">
+            <img src="<?php echo get_template_directory_uri();?>/img/beton-img.jpg" alt=""> 
+          </a>
+          <div class="info-new__card-text-block">
+            <span>Бетонные полы</span>
+            <a href="#" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
 
@@ -45,13 +38,8 @@
             <img src="<?php echo get_template_directory_uri();?>/img/engin-card.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
-            <h3>Инженерные системы</h3>
-            <ul>
-              <li><a href="#" class="info-new__card-link">Монтаж электрооборудования</a></li>
-              <li><a href="#" class="info-new__card-link">Отопление и водоотведение</a></li>
-              <li><a href="#" class="info-new__card-link">Бетонные полы</a></li>
-              <li><a href="#" class="info-new__card-link">Наши работы</a></li>
-            </ul>
+            <span>Инженерные системы</span>
+            <a href="#" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
 
@@ -62,21 +50,27 @@
 
 <section class="about about-new">
   <div class="container">
-    <div class="about-photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/about.png)"></div>
-    <div class="about-content">
-      <h1 class="section-title">О НАШЕЙ КОМПАНИИ</h1>
+    <div class="about-photo_new about-photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/about-new.jpg)"></div> 
+    <div class="about-content-new about-content">
+      <h1 class="section-title">ООО «Н-Автоматик» - Инженерные системы</h1>
       <p>
-        ООО «Н-Автоматик» является официальным дистрибьютором компании Nice в Центрально-Черноземном регионе.
-        Наша компания основана в 2016г., и является  молодой  динамично развивающейся. Нашими партнерами являются
-        торговые и монтажные организации не только Воронежской области, а также Белгородской, Курской, Липецкой. 
-        Предлагаемая нами  продукция является высококачественной и проверена в различных регионах России. 
-        Специалисты нашей компании подберут автоматические системы под Ваши требования.
+        ООО «Н-Автоматик» - монтажная компания инженерного профиля. Мы оказываем услуги по монтажу и пусконаладке систем электроснабжения водоснабжения, 
+        отопления и автоматики для ворот всех типов. Так же мы оказываем услуги по заливке бетонных полов  для производственных помещений. Мы работаем на 
+        рынке строительных услуг с 2016 года за это время нашими услугами остались довольны более 1000 клиентов.
       </p>
     </div>
   </div>
 </section>
 
-<?php get_template_part('template-parts/main-bnr');?>
+<section class="main-bnr-new main-bnr" style="background-image: url(<?php echo get_template_directory_uri();?>/img/bnr-new.jpg)">
+    <div class="container">
+      <div class="logo-bnr" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></div>
+      <div class="main-bnr__content">
+      <div class="main-bnr__title-new  main-bnr__title">Инженерные системы</div>
+        <div class="main-bnr__subtitle">для частных домовладений и промышленных предприятий</div>
+      </div>
+    </div>
+  </section>
 
 <?php get_template_part('template-parts/main-products');?>
 
