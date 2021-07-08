@@ -271,7 +271,7 @@ if(is_home() || is_front_page()) {
       <a href="<?php echo home_url('/');?>" class="logo" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></a>
       <div class="header-content">
         <div class="header-contacts">
-          <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>" >
+          <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url( '/' ) ?>" >
             <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
             <input type="submit" id="searchsubmit" value="" />
           </form>

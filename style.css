@@ -4739,9 +4739,6 @@ article, .entry-header {
   .cat-video__text {
     font-size: 26px;
   }
-  /* #searchform {
-    display: none;
-  } */
   .mob-menu #searchform {
     display: block;
     margin-top: 20px;
@@ -4903,6 +4900,11 @@ position: relative;
   }
   .polymer-advantages .advantages__item {
     margin-right: 0; }
+  .searchform {
+    display: none;
+  }
+  .header-content-new .searchform {
+    display: block; }
 }
 
 @media screen and (max-width:1000px) {
