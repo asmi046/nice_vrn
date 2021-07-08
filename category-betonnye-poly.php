@@ -27,8 +27,6 @@ get_header();
 				?>
 			</header><!-- .page-header -->
 
-			<ul class = "work-button-block"> <?php wp_list_categories( array('child_of' => 12, 'hide_empty'=> 0, 'title_li' => '') ); ?> </ul>
-
 			<div class="news-wrapper ">
 			<?php
 			/* Start the Loop */
