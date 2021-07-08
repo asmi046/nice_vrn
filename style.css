@@ -5377,6 +5377,8 @@ position: relative;
 @media screen and (max-width:612px) {
   .info-new__card-body {
     flex: 0 1 100%; }
+  .info-new__card-body {
+    border-right: none; }
 }
 
 @media screen and (max-width:610px) {
@@ -5564,6 +5566,9 @@ position: relative;
   .header__search #searchsubmit {
     top: -2px;
     background-size: 48%; }
+  .main-bnr__title-new {
+    font-size: 50px !important;
+  }
 }
 
 @media screen and (max-width:500px) {
@@ -5635,6 +5640,9 @@ position: relative;
   .smart-equip .button-wrap .product-slider__link {
     width: 100%;
     display: block; }
+  .info-new__card-link {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:460px) {
@@ -5863,6 +5871,8 @@ position: relative;
     font-size: 28px;
     line-height: 33px;
   }
+  .main-bnr__title-new {
+    font-size: 43px !important; }
 }
 
 @media screen and (max-width:350px) {
