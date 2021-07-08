@@ -3056,6 +3056,7 @@ article, .entry-header {
   min-height: 100vh;
 }
 #content {
+  /* padding-top: 80px; */
   margin-bottom: auto;
   z-index: -1;
 }
@@ -4684,6 +4685,8 @@ article, .entry-header {
   .smart-equip__col .products-loop {
     flex: 0 0 24.3%;
     margin: 0; }
+  .info-new__card-text-block ul li {
+    flex: 0 1 100%; }
 }
 
 @media screen and (max-width:1200px) {
@@ -5527,6 +5530,10 @@ position: relative;
     margin: 0 0 20px 0; }
   .header__mob-menu-top ul:nth-child(2) {
     flex: 0 1 100%; }
+  .info-new__card-text-block {
+    padding: 20px 25px; }
+  .info-new__card-text-block h3 {
+    margin: 0 0 15px 0; }
 }
 
 @media screen and (max-width:480px) {
@@ -5720,6 +5727,8 @@ position: relative;
     margin-right: 23px !important; }
   .header__menu-burg {
     flex: 0 0 35px; }
+  .info-new__card-img {
+    max-height: 230px; }
 }
 
 
