@@ -3056,7 +3056,7 @@ article, .entry-header {
   min-height: 100vh;
 }
 #content {
-  /* padding-top: 80px; */
+  padding-top: 80px;
   margin-bottom: auto;
   /* z-index: -1; */
 }

@@ -1,109 +1,90 @@
-<?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package automatic
- */
-
-get_header(); 
+<?php 
+/*
+* Template Name: Шаблон новая главная тест
+*/
+  get_header(); 
 ?>
 
 <div id="primary" class="content-area">
   <main id="main" class="site-main">
-    <?php 
-    $arr_banner = carbon_get_theme_option('auto_banner');
-    if($arr_banner):
-      ?>
-      <div class="main-slider__wrapper">
-        <div class="slider-item__content">
-          <div class="slider-item__subtitle"><?php echo $banner['auto_banner_title']?></div>
-          <div class="slider-item__title"><?php echo $banner['auto_banner_subtitle']?></div>
+
+  <section class="info-new">
+    <!-- <div class="container "> -->
+
+      <div class="info-new__row">
+
+        <div class="info-new__card-body">
+          <a href="#" class="info-new__card-img">
+            <img src="<?php echo get_template_directory_uri();?>/img/gate-automation.jpg" alt=""> 
+          </a>
+          <div class="info-new__card-text-block">
+            <span>Автоматика для ворот</span>
+            <a href="https://n-avtomatic.ru/asgproduct" class="info-new__card-link">Подробнее</a>
+          </div>
         </div>
-        <section class="main-slider">
-          <?php 
 
-          $insex = 0;
-          foreach($arr_banner as $banner):?>
-            <div class="slider-item" id = "hiddenSlideText<?php echo $insex; ?>" data-slidetext="<?php echo $banner['auto_banner_title']?>" data-doptext="<?php echo $banner['auto_banner_subtitle']?>" style="background-image: url(<?php echo wp_get_attachment_image_src($banner['auto_banner_img'], 'full')[0];?>)">
-            </div>
-            <?php $insex++; endforeach;?>
-      <!-- <div class="slider-item" style="background-image: url(img/ohd_commercial_2.png)">
-        <div class="slider-item__content">
-          <div class="slider-item__subtitle">Комплекты автоматики для промышленных ворот</div>
-          <div class="slider-item__title">Nice</div>
+        <div class="info-new__card-body">
+          <a href="#" class="info-new__card-img">
+            <img src="<?php echo get_template_directory_uri();?>/img/beton-img.jpg" alt=""> 
+          </a>
+          <div class="info-new__card-text-block">
+            <span>Бетонные полы</span>
+            <a href="<?php echo get_permalink(3094);?>" class="info-new__card-link">Подробнее</a>
+          </div>
         </div>
-      </div> -->
-    </section>
-  </div>
-<?php endif;?>
-<script type="text/javascript">
-  jQuery('.main-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    jQuery(".slider-item__subtitle").html(jQuery("#hiddenSlideText"+nextSlide).data("slidetext"));
-    jQuery(".slider-item__title").html(jQuery("#hiddenSlideText"+nextSlide).data("doptext"));
-  });
 
-  jQuery('.main-slider').on('init', function(event, slick, currentSlide, nextSlide){
-    jQuery(".slider-item__subtitle").html(jQuery("#hiddenSlideText0").data("slidetext"));
-    jQuery(".main-slider__info-date").html(jQuery(".programms-date").html());
-    jQuery(".slider-item__title").html(jQuery("#hiddenSlideText0").data("doptext"));
+        <div class="info-new__card-body">
+          <a href="#" class="info-new__card-img">
+            <img src="<?php echo get_template_directory_uri();?>/img/engin-card.jpg" alt=""> 
+          </a>
+          <div class="info-new__card-text-block">
+            <span>Инженерные системы</span>
+            <a href="<?php echo get_permalink(2951);?>" class="info-new__card-link">Подробнее</a>
+          </div>
+        </div>
 
-  });
-</script>
-<section class="about">
+      </div>
+
+    <!-- </div>  -->
+  </section>
+
+<section class="about about-new">
   <div class="container">
-    <div class="about-photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/about.png)"></div>
-    <div class="about-content">
-      <h1 class="section-title"><?php echo carbon_get_theme_option('about_home_title');?></h1>
-      <?php echo carbon_get_theme_option('about_home');?>
+    <div class="about-photo_new about-photo" style="background-image: url(<?php echo get_template_directory_uri();?>/img/about-new.jpg)"></div> 
+    <div class="about-content-new about-content">
+      <h1 class="section-title">ООО «Н-Автоматик» - Инженерные системы</h1>
+      <p>
+        ООО «Н-Автоматик» - монтажная компания инженерного профиля. Мы оказываем услуги по монтажу и пусконаладке систем электроснабжения водоснабжения, 
+        отопления и автоматики для ворот всех типов. Так же мы оказываем услуги по заливке бетонных полов  для производственных помещений. Мы работаем на 
+        рынке строительных услуг с 2016 года за это время нашими услугами остались довольны более 1000 клиентов.
+      </p>
     </div>
   </div>
 </section>
 
-<?php get_template_part('template-parts/product-slider');?>
+<section class="main-bnr-new main-bnr" style="background-image: url(<?php echo get_template_directory_uri();?>/img/bnr-new.jpg)">
+    <div class="container">
+      <div class="logo-bnr" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></div>
+      <div class="main-bnr__content">
+      <div class="main-bnr__title-new  main-bnr__title">Инженерные системы</div>
+        <div class="main-bnr__subtitle">для частных домовладений и промышленных предприятий</div>
+      </div>
+    </div>
+  </section>
 
-<?php get_template_part('template-parts/main-bnr');?>
-<?php 
-    // $args = array(
-    //   'taxonomy' => 'asgproductcat',
-    //   'hide_empty' => 0,
-    //   'exclude' => 3,
-    //   'number' => 4,
-    // );
-    // $cat = get_categories($args);
-    // if($cat):
-?>
-<!--     <section class="category-wrapper">
-      <div class="container">
-        <?php foreach($cat as $item):
-          $cat_id = $item->term_id?>
-        <div class="category-item">
-          <div class="category-item__icon" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_term_meta($cat_id, 'term_product_icon'), 'full')[0]?>)"></div>
-          <div class="category-item__title"><?php echo $item->name?></div>
-          <a href="<?php echo get_term_link($cat_id, 'asgproductcat')?>" class="category-item__link">Подробнее</a>
-        </div>
-      <?php endforeach;?>
+<?php get_template_part('template-parts/main-products');?>
+
+<section class="main-bnr" style="background-image: url(<?php echo get_template_directory_uri();?>/img/bnr.png)">
+    <div class="container">
+      <div class="logo-bnr" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></div>
+      <div class="main-bnr__content">
+        <div class="main-bnr__subtitle">Комплексное решениие для загородного дома от</div>
+        <div class="main-bnr__title">Nice</div>
       </div>
-    </section> -->
-    <?php //endif;?>
-    <?php get_template_part('template-parts/main-products');?>
-<!--     <section class="about">
-      <div class="container">
-        <div class="about-header">
-          <span style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo_white'), 'full')[0];?>)"></span>
-        </div>
-        <div class="about-content">
-          <h2 class="section-title"><?php echo carbon_get_theme_option('about_home_title');?></h2>
-          <?php echo wpautop(carbon_get_theme_option('about_home'));?>
-        </div>
-      </div>
-    </section> -->
+    </div>
+  </section>
+
+  <?php get_template_part('template-parts/heating-advantages-block');?> 
 
   <a href="<?php echo get_permalink(2951);?>"> 
     <section class="smart-conven">
@@ -120,29 +101,7 @@ get_header();
   </a>
 
     <?php get_template_part('template-parts/news-events');?>
-<!--     <section class="news">
-      <div class="container">
-        <h2 class="section-title">Новости</h2>
-        <?php 
-          $args = array(
-            'posts_per_page' => 2,
-            'cat' => 2
-          );
-          $query = new WP_Query($args);
-          if($query->have_posts()):
-        ?>
-        <div class="news-wrapper">
-          <?php while($query->have_posts()):
-            $query->the_post();
-            get_template_part('template-parts/news-item');
-          endwhile;?>
-        </div>
-        <?php endif; wp_reset_postdata();?>
-        <div class="button-wrap">
-          <a href="<?php echo get_category_link(2);?>" class="product-slider__link">Читать все новости</a>
-        </div>
-      </div>
-    </section> -->
+
   </main><!-- #main -->
 </div><!-- #primary -->
 

@@ -60,6 +60,9 @@ if ( ! function_exists( 'auto_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'auto' ),
 			'menu-mob' => esc_html__( 'Мобильное меню', 'auto' ),
+			'menu-auto-vorota' => esc_html__( 'Меню Автоматические ворота', 'auto' ),
+			'menu-smart-house' => esc_html__( 'Меню Умный дом', 'auto' ),
+			'menu-engineering' => esc_html__( 'Меню Инженерные системы', 'auto' ),
 			'menu-foot' => esc_html__( 'Меню в подвале', 'auto' ),
 		) );
 

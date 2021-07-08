@@ -165,6 +165,8 @@ if(is_home() || is_front_page()) {
           <div class="product-content__block">
 
           </div>
+         <!--  <input type="text" id="order-modal-form-name" placeholder="Имя">
+          <input type="tel" id="order-modal-form-phone" placeholder="Телефон"> -->
           <div class="character-block__btn">
             <div class="more-link cancel-link">Отмена</div>
             <div class="link-consultation product-add-to-cart button link-button toBascetInWin" id="buy-submit-link">В корзину</div>
@@ -213,9 +215,12 @@ if(is_home() || is_front_page()) {
     </div>
   </div>
   <div id="page" class="site">
-  <div class="blackout"></div>
 
- <?php
+<!--     <header class="header header-<?php echo $header_class;?>" style="background-image: url(<?php echo $bg;?>);">
+      <div class="container">
+        <div class="hamburger"></div>
+        <a href="<?php echo home_url('/');?>" class="logo" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></a>
+        <?php
             $bsumm = 0;
             $bcount = 0;
             
@@ -237,29 +242,42 @@ if(is_home() || is_front_page()) {
               }
             }
           ?>
-  
+        <a href="<?php echo get_permalink(65);?>" class="header-cart">
+          <span class="inputCount"><?php echo $bcount;?></span>
+        </a>
+        <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone');?></a>
+      </div>
+      <nav class="mobile-menu">
+        <div class="close-menu"></div>
+        <?php mob_menu();?>
+      </nav>
+      <nav class="main-menu">
+        <div class="container">
+          <?php main_menu();?>
+        </div>
+      </nav>
+    </header> -->
+    <!-- <div class="dialog-cb-button dialog-cb-button__decstop">
+      <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>"></a>
+    </div> -->
+
     <div class="dialog-cb-button dialog-cb-button__decstop">
       <a href="#"></a>
     </div>
     <div class="dialog-cb-button dialog-cb-button__mobile">
       <a class="mgo-number" href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>"><?php echo carbon_get_theme_option('as_phone');?></a>
     </div>
-
-    <!-- header  -->
-    <header class="header-new header">
-
-      <a href="<?php echo home_url('/');?>" class="logo-new logo" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></a>
-      
-      <div class="header-content-new">
-        <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url( '/' ) ?>" >
-          <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
-          <input type="submit" id="searchsubmit" value="" />
-        </form>
-        <button class="mob-search"></button>
-        <div class="header-contacts-new header-contacts">
+    <header class="header">
+      <a href="<?php echo home_url('/');?>" class="logo" style="background-image: url(<?php echo wp_get_attachment_image_src(carbon_get_theme_option('as_logo'), 'full')[0];?>)"></a>
+      <div class="header-content">
+        <div class="header-contacts">
+          <form role="search" method="get" id="searchform" class="searchform" action="<?php echo home_url( '/' ) ?>" >
+            <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
+            <input type="submit" id="searchsubmit" value="" />
+          </form>
           <a href="<?php echo get_permalink(65);?>" class="header-cart">
             <?php
-            $bsumm = 0;
+            $bsumm = 0; 
             $bcount = 0;
             
             if (!empty($_COOKIE["bascet"])) {
@@ -281,56 +299,26 @@ if(is_home() || is_front_page()) {
             }?>
             <span><?php echo $bcount;?></span>
           </a>
-          
-          <div class="header-phone__wrap-new header-phone__wrap">
-            <div class="header-phone__addit">
-              <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>"><?php echo carbon_get_theme_option('as_phone');?></a>
-              <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_2'))?>"><?php echo carbon_get_theme_option('as_phone_2');?></a>
-            </div>
-            <div class="header-phone__main">
-              <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phone_3');?></a>
-              <p class="header-phone__subtitle">Бесплатно по территории РФ</p>
-            </div>
+          <div class="header-phone__wrap">
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="header-phone header-phone_main"><?php echo carbon_get_theme_option('as_phone_3');?></a>
+            <p class="header-phone__subtitle">Бесплатно по территории РФ</p>
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone'))?>" class="header-phone header-phone_db"><?php echo carbon_get_theme_option('as_phone');?></a>
+            <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phones_2'))?>" class="header-phone header-phone_db"><?php echo carbon_get_theme_option('as_phones_2');?></a>
           </div>
-          <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phone_3'))?>" class="mob-callback__phone"></a>
-
+          <div class="hamburger"></div>
         </div>
+        <div class="mob-menu">
+          <div class="close-menu"></div>
+          <?php mob_menu();?>
+          <a href="tel:<?php echo str_replace(array('(', ')', '-', ' '), '', carbon_get_theme_option('as_phones_2'))?>" class="header-phone"><?php echo carbon_get_theme_option('as_phones_2');?></a>
+          <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ) ?>" >
+            <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" />
+            <input type="submit" id="searchsubmit" value="" />
+          </form>
+        </div>
+        <nav>
+          <?php main_menu();?> 
+        </nav>
       </div>
-
-      <div class="header__menu-burg">
-        <p>Меню</p>
-        <div class="menu__icon icon-menu">
-				  <span></span>
-				  <span></span>
-				  <span></span>
-			  </div>
-      </div>
-      
     </header>
-
-    <div class="header__mob-menu">
-        <div class="header__mob-menu-top">
-         <?php wp_nav_menu( array('theme_location' => 'menu-auto-vorota','menu_class' => 'ul-clean',
-		        'container_class' => 'ul-clean','container' => false )); ?>
-
-         <?php wp_nav_menu( array('theme_location' => 'menu-smart-house','menu_class' => 'ul-clean',
-		        'container_class' => 'ul-clean','container' => false )); ?>
-
-         <?php wp_nav_menu( array('theme_location' => 'menu-engineering','menu_class' => 'ul-clean',
-		        'container_class' => 'ul-clean','container' => false )); ?>
-        </div>
-
-        <div class="header__mob-menu-line"></div>
-
-        <div class="header__mob-menu-botom">
-          <?php main_menu();?>
-        </div>
-      </div>
-
-      <form role="search" method="get" id="searchform" class="header__search" action="<?php echo home_url( '/' ) ?>" >
-          <input type="text" value="<?php echo get_search_query() ?>" placeholder="Поиск по сайту" name="s" id="s" /> 
-          <input type="submit" id="searchsubmit" value="" />
-        </form>
-
     <div id="content" class="site-content">
-     
