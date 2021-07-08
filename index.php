@@ -14,7 +14,7 @@
       <div class="info-new__row">
 
         <div class="info-new__card-body">
-          <a href="#" class="info-new__card-img">
+          <a href="https://n-avtomatic.ru/asgproduct" class="info-new__card-img">
             <img src="<?php echo get_template_directory_uri();?>/img/gate-automation.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
@@ -24,7 +24,7 @@
         </div>
 
         <div class="info-new__card-body">
-          <a href="#" class="info-new__card-img">
+          <a href="<?php echo get_permalink(3094);?>" class="info-new__card-img">
             <img src="<?php echo get_template_directory_uri();?>/img/beton-img.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
@@ -34,7 +34,7 @@
         </div>
 
         <div class="info-new__card-body">
-          <a href="#" class="info-new__card-img">
+          <a href="<?php echo get_permalink(2951);?>" class="info-new__card-img">
             <img src="<?php echo get_template_directory_uri();?>/img/engin-card.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
