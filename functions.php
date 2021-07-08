@@ -139,7 +139,7 @@ add_action( 'widgets_init', 'auto_widgets_init' );
  * Enqueue scripts and styles.
  */
 
-define("allversion", "1.0.3");
+define("allversion", "1.0.5");
 
 function auto_scripts() {
 	wp_enqueue_style( 'auto-style', get_stylesheet_uri(), array(), allversion, 'all' );
