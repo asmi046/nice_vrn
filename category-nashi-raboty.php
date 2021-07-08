@@ -26,6 +26,13 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+
+			<div class="work-button-block">
+				<button class="work-button-block__btn button">Автоматические ворота</button>
+				<button class="work-button-block__btn button">Бетонные полы</button>
+				<button class="work-button-block__btn button">Умный дом</button>
+			</div>
+
 			<div class="news-wrapper ">
 			<?php
 			/* Start the Loop */

@@ -153,6 +153,6 @@ window.addEventListener('click', e => { // при клике в любом ме�
     iconMenu.classList.remove('active') // то закрываем окно навигации, удаляя активный класс
     mobMenu.classList.remove('active')
     blackOut.classList.remove("active")
-    headsearch.classList.remove("active");
+    headsearch.classList.remove("active")
   }
 })
