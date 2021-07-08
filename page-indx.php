@@ -19,7 +19,7 @@
           </a>
           <div class="info-new__card-text-block">
             <span>Автоматика для ворот</span>
-            <a href="#" class="info-new__card-link">Подробнее</a>
+            <a href="https://n-avtomatic.ru/asgproduct" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
 
@@ -29,7 +29,7 @@
           </a>
           <div class="info-new__card-text-block">
             <span>Бетонные полы</span>
-            <a href="#" class="info-new__card-link">Подробнее</a>
+            <a href="<?php echo get_permalink(3094);?>" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
 
@@ -39,7 +39,7 @@
           </a>
           <div class="info-new__card-text-block">
             <span>Инженерные системы</span>
-            <a href="#" class="info-new__card-link">Подробнее</a>
+            <a href="<?php echo get_permalink(2951);?>" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
 
