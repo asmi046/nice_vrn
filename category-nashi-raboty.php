@@ -28,9 +28,10 @@ get_header();
 			</header><!-- .page-header -->
 
 			<div class="work-button-block">
-				<button class="work-button-block__btn button">Автоматические ворота</button>
+			<ul class = "work-button-block"> <?php wp_list_categories( array('child_of' => 12, 'hide_empty'=> 0, 'title_li' => '') ); ?> </ul>
+				<!-- <button class="work-button-block__btn button">Автоматические ворота</button>
 				<button class="work-button-block__btn button">Бетонные полы</button>
-				<button class="work-button-block__btn button">Умный дом</button>
+				<button class="work-button-block__btn button">Умный дом</button> -->
 			</div>
 
 			<div class="news-wrapper ">

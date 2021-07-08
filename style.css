@@ -4630,15 +4630,29 @@ article, .entry-header {
 .work-button-block {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
+  padding: 0;
+  margin: 0 0 30px 0;
 }
-.work-button-block__btn {
+
+.work-button-block li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.work-button-block li a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   min-width: 200px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  color: #fff;
+  border: 1px solid #0f75bd;
+  background: #0f75bd;
+  padding: 6px 28px;
+}
+
+.work-button-block li a:hover {
+  text-decoration: none;
 }
 
 .work-button-block__btn:last-child {
@@ -5643,6 +5657,11 @@ position: relative;
   .info-new__card-link {
     width: 100%;
   }
+  .work-button-block li {
+    margin-right: 0;
+    width: 100%; }
+  .work-button-block li a {
+    width: 100%; }
 }
 
 @media screen and (max-width:460px) {
