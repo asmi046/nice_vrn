@@ -121,6 +121,19 @@ jQuery(document).ready(function ($) {
     }
   });
 
+
+  // $('.info-new__row').slick({
+  //   arrows: false,
+  //   dots: false,
+  //   infinite: true,
+  //   speed: 1000,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 1800,
+  //   adaptiveHeight: true
+  // });
+
 });
 
 

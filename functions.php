@@ -160,6 +160,7 @@ function auto_scripts() {
 
 	wp_enqueue_script("light", get_template_directory_uri() . '/js/magnific.js', array(), null, true);
 	wp_enqueue_script("basket", get_template_directory_uri() . '/js/bascet.js', array(), null, true);
+	wp_enqueue_script("slick", get_template_directory_uri() . '/js/slick.min.js', array(), null, true); 
 
 	// wp_enqueue_script( 'lightbox', get_template_directory_uri().'/js/lightbox.min.js', array(), null, true); //Лайтбокс
 
@@ -170,7 +171,7 @@ function auto_scripts() {
       'nonce'   => wp_create_nonce( 'NEHERTUTLAZIT' )
     ) );
 
-	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) { 
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
