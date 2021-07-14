@@ -19,7 +19,10 @@
           </a>
           <div class="info-new__card-text-block">
             <span>Автоматика для ворот</span>
+            <div class="info-new__card-block-link">
             <a href="https://n-avtomatic.ru/asgproduct" class="info-new__card-link">Подробнее</a>
+            <a href="<?php echo get_category_link(14);?>" class="info-new__card-link">Инструкции</a>
+            </div>
           </div>
         </div>
 
@@ -29,7 +32,7 @@
           </a>
           <div class="info-new__card-text-block">
             <span>Бетонные полы</span>
-            <a href="<?php echo get_permalink(3094);?>" class="info-new__card-link">Подробнее</a>
+            <a href="<?php echo get_permalink(3089);?>" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
 
@@ -54,7 +57,7 @@
     <div class="about-content-new about-content">
       <h1 class="section-title">ООО «Н-Автоматик» - Инженерные системы</h1>
       <p>
-        ООО «Н-Автоматик» - монтажная компания инженерного профиля. Мы оказываем услуги по монтажу и пусконаладке систем электроснабжения водоснабжения, 
+        ООО «Н-Автоматик» - монтажная компания инженерного профиля. Мы оказываем услуги по монтажу и пусконаладке систем электроснабжения, водоснабжения, 
         отопления и автоматики для ворот всех типов. Так же мы оказываем услуги по заливке бетонных полов  для производственных помещений. Мы работаем на 
         рынке строительных услуг с 2016 года за это время нашими услугами остались довольны более 1000 клиентов.
       </p>
