@@ -4702,6 +4702,41 @@ article, .entry-header {
   background-color: grey;
 }
 
+.floors-constract {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+.floors-constract__card {
+  flex: 0 1 48%;
+  background: #00549f;
+  overflow: hidden;
+}
+.floors-constract__card-img {
+  height: 350px;
+  overflow: hidden;
+}
+.floors-constract__card-img img {
+  max-width:  100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.floors-constract__card-descp {
+  padding: 26px;
+  color: #fff;
+}
+.floors-constract__card-descp-title {
+  font-size: 26px;
+  margin: 0;
+}
+
+
+
+
+
+
+
 
 
 
