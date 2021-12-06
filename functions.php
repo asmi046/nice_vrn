@@ -145,7 +145,7 @@ add_action('widgets_init', 'auto_widgets_init');
  * Enqueue scripts and styles.
  */
 
-define("allversion", "1.0.8");
+define("allversion", "1.0.9");
 
 function auto_scripts()
 {

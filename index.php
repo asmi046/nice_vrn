@@ -31,7 +31,7 @@
             <img src="<?php echo get_template_directory_uri();?>/img/beton-img.jpg" alt=""> 
           </a>
           <div class="info-new__card-text-block">
-            <span>Бетонные полы железобетонные конструкции</span> 
+            <span>Бетонные полы и железобетонные конструкции</span> 
             <a href="<?php echo get_permalink(3158);?>" class="info-new__card-link">Подробнее</a>
           </div>
         </div>
