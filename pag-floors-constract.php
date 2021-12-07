@@ -9,7 +9,7 @@ get_header(); ?>
 		<div class="container">
 			<?php
 			if ( function_exists('yoast_breadcrumb') ) {
-				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' ); 
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
 			}
 			?>
 
@@ -28,7 +28,7 @@ get_header(); ?>
 
 				<a href="<?php echo get_permalink(3161);?>" class="floors-constract__card">
 					<div class="floors-constract__card-img">
-						<img src="<?php echo get_template_directory_uri();?>/img/constract.jpg" alt="Железобетонные конструкции">
+						<img src="<?php echo get_template_directory_uri();?>/img/formwork.jpg" alt="Железобетонные конструкции">
 					</div>
 					<div class="floors-constract__card-descp">
 						<h3 class="floors-constract__card-descp-title">Железобетонные конструкции</h3>

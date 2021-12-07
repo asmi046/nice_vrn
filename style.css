@@ -17,7 +17,7 @@ automatic is based on Underscores https://underscores.me/, (C) 2012-2017 Automat
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
-Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/ 
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS: 
@@ -4731,11 +4731,31 @@ article, .entry-header {
   margin: 0;
 }
 
+.constract-table {
+    width: 100%;
+    margin: 20px 0 0 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.constract-table__tr:nth-of-type(odd) {
+    background: #fafafa;
+}
+.constract-table__td {
+    padding: 13px 14px;
+    border: 1px solid #eaeaea;
+    vertical-align: top;
+}
+.constract-table__tr:nth-of-type(even) {
+    background: #fff;
+}
 
+.constract-sec #breadcrumbs {
+  margin-top: 0;
+}
 
-
-
-
+.constract-info-text {
+  padding: 25px 0;
+}
 
 
 
@@ -5662,6 +5682,8 @@ position: relative;
   .floors-constract__card {
     flex: 0 1 100%;
     margin-bottom: 15px;}
+  .constract-sec {
+    padding: 25px 0;}
 }
 
 @media screen and (max-width:500px) {
