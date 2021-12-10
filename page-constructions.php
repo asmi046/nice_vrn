@@ -114,7 +114,6 @@ get_header(); ?>
       произведена армировка, зависит срок службы всего здания. Такие работы выполняются двумя способами:
     </p>
     <ul class="polymer-list">
-      <li>Бетонные полы с топпингом не расслаиваются, устойчивы к истиранию, не размягчаются от жары и имеют средний срок эксплуатации 7 — 25 лет.</li>
       <li>
         Вязка проволокой – дает более надежный и качественный результат, но делается исключительно вручную, что увеличивает стоимость таких 
         трудоемких работ до 2000-2800 руб/м2.
@@ -136,40 +135,40 @@ get_header(); ?>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Перекрытие</td>
           <td class="constract-table__td" style="text-align: center;" rowspan="8" width="76">м3</td>
-          <td class="constract-table__td" width="111">2600-3500</td>
+          <td class="constract-table__td" width="111">3600-4500</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">МЗЛФ</td>
-          <td class="constract-table__td" width="111">3200-3600</td>
+          <td class="constract-table__td" width="111">4200-4600</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Буронабивные сваи фундамента</td>
-          <td class="constract-table__td" width="111">3400-3600</td>
+          <td class="constract-table__td" width="111">4400-4600</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Фундаментная плита</td>
-          <td class="constract-table__td" width="111">2500-4300</td>
+          <td class="constract-table__td" width="111">3500-5300</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Железобетонный ростверк, армопояс</td>
-          <td class="constract-table__td" width="111">3300-4500</td>
+          <td class="constract-table__td" width="111">4300-5500</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Заглубленный ленточный фундамент</td>
-          <td class="constract-table__td" width="111">3000-4400</td>
+          <td class="constract-table__td" width="111">4000-5400</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Монолитные лестничные марши</td>
-          <td class="constract-table__td" width="111">2800-9000</td>
+          <td class="constract-table__td" width="111">3800-10 000</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Крыльцо</td>
-          <td class="constract-table__td" width="111">1300-2000</td>
+          <td class="constract-table__td" width="111">2300-3000</td>
         </tr>
         <tr class="constract-table__tr">
           <td class="constract-table__td" width="299">Бетонирование террасы</td>
           <td class="constract-table__td" style="text-align: center;" width="76">м2</td>
-          <td class="constract-table__td" width="111">1000-1500</td>
+          <td class="constract-table__td" width="111">2000-2500</td>
         </tr>
       </tbody>
     </table>
