@@ -7,7 +7,7 @@
         <? if ($priceFile) {?>
           <div class="file-block__item">
 						<a href="<?echo wp_get_attachment_url($priceFile);?>" download class="file-block__item-icon"></a>
-						<!-- <a href="%s" download><div class="file-block__item-text"></div></a> -->
+						<a href="<?echo wp_get_attachment_url($priceFile);?>" download><div class="file-block__item-text">Скачать прайс</div></a>
 					</div>
         <?}?>
         <?php 
