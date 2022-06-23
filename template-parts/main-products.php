@@ -1,11 +1,20 @@
     <section class="main-products">
       <div class="container">
         <h2 class="section-title">Интернет магазин <br>Автоматики</h2>
+        <?
+          $priceFile = carbon_get_theme_option('price_file');
+        ?>
+        <? if ($priceFile) {?>
+          <div class="file-block__item">
+						<a href="<?echo wp_get_attachment_url($priceFile);?>" download class="file-block__item-icon"></a>
+						<!-- <a href="%s" download><div class="file-block__item-text"></div></a> -->
+					</div>
+        <?}?>
         <?php 
           $args = array(
             'posts_per_page' => 4,
 			  'orderby' => "rand",
-            'post_type' => 'asgproduct',
+            'post_type' => 'asgproduct', 
             /*
 			  'tax_query' => array(
               array(

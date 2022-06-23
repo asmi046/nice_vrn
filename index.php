@@ -11,13 +11,13 @@
   <section class="info-new">
     <!-- <div class="container "> -->
 
-      <div class="info-new__row">
+      <div class="info-new__row"> 
 
         <div class="info-new__card-body slider__item">
           <a href="https://n-avtomatic.ru/asgproduct" class="info-new__card-img">
             <img src="<?php echo get_template_directory_uri();?>/img/gate-automation.jpg" alt=""> 
           </a>
-          <div class="info-new__card-text-block">
+          <div class="info-new__card-text-block"> 
             <span>Автоматика для ворот</span>
             <div class="info-new__card-block-link">
             <a href="https://n-avtomatic.ru/asgproduct" class="info-new__card-link">Подробнее</a>

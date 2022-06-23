@@ -23,6 +23,11 @@ Container::make( 'theme_options', 'as_theme_options', 'Настройки тем
             ->set_width(30),
         ))
     ))
+    ->add_tab('Блок ссылок', array(
+      // Field::make('file', 'price_file', 'прайс-лист на главной') 
+      // ->set_value_type('url'),
+      Field::make('file', 'price_file', 'Прайс-лист на главной')->set_width(50),
+    ))
     ->add_tab('Контакты', array(
         Field::make( 'text', 'as_company', __( 'Название' ) )
           ->set_width(50),
